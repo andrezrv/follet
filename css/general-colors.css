@@ -1,0 +1,274 @@
+/**
+ * This stylesheet will manage all color-related styles except primary and
+ * secondary colors.
+ *
+ * @package Follet_Theme
+ * @since   1.0
+ */
+/* =============================================================================
+   General
+   ========================================================================== */
+body {
+  background-color: white;
+  color: black;
+}
+
+.breadcrumb {
+  background: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.breadcrumb > li + li:before,
+.breadcrumb .active {
+  color: #777777;
+}
+
+.page-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* =============================================================================
+   Top navigation
+   ========================================================================== */
+#top-navigation-wrapper.navbar-fixed-top {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-default {
+  background-color: white;
+}
+.navbar-default .navbar-nav > li > a {
+  color: black;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background: none;
+}
+
+#top-navigation-searchform-show a:hover {
+  color: #777777;
+}
+
+.navbar-default #top-navigation-searchform-show a {
+  color: black;
+}
+
+.navbar-inverse #top-navigation-searchform-show a {
+  color: white;
+}
+
+.navbar-collapse {
+  border: none;
+}
+
+.navbar-fixed-top #top-navigation-searchform-copy {
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+#top-navigation .dropdown-submenu a:hover {
+  color: white;
+}
+
+.navbar-default #top-navigation-searchform-copy {
+  background-color: white;
+}
+
+.navbar-inverse #top-navigation-searchform-copy {
+  background-color: #222222;
+}
+
+.navbar-default, .navbar-inverse {
+  border: none;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  color: white;
+}
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+.site-branding {
+  overflow: auto;
+}
+.site-branding h1 a {
+  color: white;
+}
+
+/* =============================================================================
+   Content
+   ========================================================================== */
+#content {
+  background-color: white;
+}
+
+blockquote {
+  background-color: #ededed;
+}
+
+.entry-thumbnail {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+  transition: opacity 0.5s ease;
+}
+.entry-thumbnail:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel-caption a {
+  text-shadow: none;
+  color: white;
+}
+
+/* Posts
+   ========================================================================== */
+#primary {
+  background-color: white;
+}
+#primary:not(.col-sm-12) {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#main article.post header:before, #tinymce.wp-editor.post header:before {
+  color: #777777;
+}
+
+#main article h1 a {
+  color: black;
+}
+
+.entry-summary {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.entry-content {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.entry-meta section {
+  color: #777777;
+}
+
+.page-links .links-container .btn {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.page-links .pagination-text:hover, .page-links .pagination-text:focus, .page-links .pagination-text:active, .page-links .pagination-text:link, .page-links .pagination-text:visited, .page-links .pagination-text:active:focus {
+  box-shadow: none;
+}
+
+.wp-caption-text {
+  background-color: #ededed;
+}
+
+.gallery-item .gallery-caption {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#main .comment article {
+  border: none;
+}
+
+.comment-content {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar
+   ========================================================================== */
+#secondary .widget .widget-title {
+  color: white;
+}
+#secondary .widget .widget-title + .separator {
+  margin: 0;
+}
+#secondary .widget ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* =============================================================================
+   Sidebar and footer
+   ========================================================================== */
+#secondary .widget .widget-title a, #footer .widget .widget-title a {
+  color: white;
+}
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+#footer {
+  background-color: #222222;
+  color: white;
+}
+#footer a {
+  color: #ededed;
+}
+#footer .wp-caption-text {
+  color: black;
+}
+#footer .widget .widget-title {
+  color: white;
+  background-color: #333333;
+}
+#footer .widget .widget-title + .separator {
+  border-top: 2px solid #333333;
+}
+#footer .widget ul li {
+  border-bottom: 1px solid #333333;
+}
+#footer #footer-sidebars + hr {
+  border: none;
+  border-bottom: 1px solid #333333;
+}
+#footer .credits {
+  color: #777777;
+}
+
+/* =============================================================================
+   Buttons
+   ========================================================================== */
+.btn.btn-primary, .btn.btn-success, .btn.btn-info, .btn.btn-warning, .btn.btn-danger {
+  border-color: transparent;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+.btn.navbar-toggle {
+  border: none;
+}
+
+/* =============================================================================
+   Gravatar profile (Jetpack)
+   ========================================================================== */
+#secondary .widget-grofile.widget h4:not(.widget-title) {
+  background: none;
+  color: #333333;
+}
+#secondary .widget-grofile.widget h4:not(.widget-title) a {
+  color: #333333;
+}
+#footer .widget-grofile.widget h4:not(.widget-title) {
+  background: none;
+  color: white;
+}
+#footer .widget-grofile.widget h4:not(.widget-title) a {
+  color: white;
+}

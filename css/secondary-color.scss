@@ -1,0 +1,63 @@
+/**
+ * This stylesheet will manage all secondary color-related styles.
+ *
+ * @package Follet_Theme
+ * @since   1.0
+ */
+
+$secondary: #D9534F;
+
+/* =============================================================================
+   General
+   ========================================================================== */
+
+a {
+	&:hover {
+		color: $secondary;
+	}
+}
+
+
+/* =============================================================================
+   Top navigation
+   ========================================================================== */
+#top-navigation-wrapper {
+ 	border-bottom: 3px solid $secondary;
+}
+
+
+/* =============================================================================
+   Articles
+   ========================================================================== */
+
+#main article {
+	h1 {
+		a {
+			&:hover {
+				color: $secondary;
+			}
+		}
+	}
+	blockquote {
+		border-color: $secondary;
+	}
+	&.post {
+		&.sticky header:before {
+			color: $secondary;
+		}
+	}
+}
+
+.wp-caption-text {
+	border-bottom: 2px solid $secondary;
+}
+
+/* =============================================================================
+   Comments
+   ========================================================================== */
+
+#comments {
+	.required {
+		color: $secondary;
+	}
+}

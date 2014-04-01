@@ -1,0 +1,319 @@
+/**
+ * This stylesheet will manage all icon-related styles.
+ *
+ * @package Follet_Theme
+ * @since   1.0
+ */
+/* =============================================================================
+   Top navigation
+   ========================================================================== */
+#top-navigation .dropdown-submenu > a:after {
+  content: "\f345";
+  font-family: 'dashicons';
+  font-size: 12px;
+  line-height: 20px;
+  position: absolute;
+  right: 15px;
+}
+
+.nav-links .icon:before {
+  font-family: 'dashicons';
+  font-size: 20px;
+  vertical-align: top;
+}
+.nav-links .icon.icon-previous:before {
+  content: "\f341";
+}
+.nav-links .icon.icon-next:before {
+  content: "\f345";
+}
+
+b.icon.icon-arrow-down:before {
+  content: "\f347";
+  font-family: 'dashicons';
+  font-size: 11px;
+  margin: 0 2px 0 5px;
+  vertical-align: middle;
+}
+
+/* =============================================================================
+   Content
+   ========================================================================== */
+.breadcrumb li.home a:before {
+  content: "\f102";
+  font-family: 'dashicons';
+  font-size: 20px;
+  vertical-align: top;
+}
+.breadcrumb > li + li:before {
+  content: "\f345";
+  font-family: 'dashicons';
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.entry-meta .icon:before {
+  font-family: 'dashicons';
+  font-size: 20px;
+  vertical-align: bottom;
+}
+.entry-meta .icon.icon-user:before {
+  content: "\f110";
+}
+.entry-meta .icon.icon-date:before {
+  content: "\f145";
+}
+.entry-meta .icon.icon-comments:before {
+  content: "\f101";
+}
+.entry-meta .icon.icon-edit:before {
+  content: "\f464";
+}
+.entry-meta .icon.icon-category:before {
+  content: "\f318";
+}
+.entry-meta .icon.icon-tag:before {
+  content: "\f323";
+}
+.entry-meta .icon.icon-permalink:before {
+  content: "\f103";
+}
+
+.contact-info .genericon {
+  font-size: 19px;
+  margin-bottom: 0;
+  margin-right: 4px;
+  margin-top: 5px;
+}
+.contact-info .genericon-facebook {
+  color: #3B5998;
+}
+.contact-info .genericon-twitter {
+  color: #33CCFF;
+}
+.contact-info .genericon-googleplus {
+  color: #DD4B39;
+}
+.contact-info .genericon-wordpress {
+  color: #21759B;
+}
+.contact-info .genericon-pinterest {
+  color: #C8232C;
+}
+.contact-info .genericon-github {
+  color: #4183C4;
+}
+.contact-info .genericon-flickr {
+  color: #FF0084;
+}
+.contact-info .genericon-linkedin {
+  color: #0E76A8;
+}
+.contact-info .genericon-instagram {
+  color: #3F729B;
+}
+.contact-info .genericon-youtube {
+  color: #C4302B;
+}
+.contact-info .genericon-vimeo {
+  color: #1AB7EA;
+}
+
+#main article.post header:before, #tinymce.wp-editor.post header:before {
+  cursor: default;
+  float: right;
+  font-family: 'dashicons';
+  font-size: 46px;
+  margin-top: 10px;
+}
+body.rtl #main article.post header:before, body.rtl #tinymce.wp-editor.post header:before {
+  float: left;
+}
+#main article.post.format-gallery header:before, #tinymce.wp-editor.post.format-gallery header:before {
+  content: "\f161";
+}
+#main article.post.format-image header:before, #tinymce.wp-editor.post.format-image header:before {
+  content: "\f128";
+}
+#main article.post.format-aside header:before, #tinymce.wp-editor.post.format-aside header:before {
+  content: "\f123";
+}
+#main article.post.format-video header:before, #tinymce.wp-editor.post.format-video header:before {
+  content: "\f126";
+}
+#main article.post.format-status header:before, #tinymce.wp-editor.post.format-status header:before {
+  content: "\f130";
+}
+#main article.post.format-quote header:before, #tinymce.wp-editor.post.format-quote header:before {
+  content: "\f122";
+}
+#main article.post.format-chat header:before, #tinymce.wp-editor.post.format-chat header:before {
+  content: "\f125";
+}
+#main article.post.format-audio header:before, #tinymce.wp-editor.post.format-audio header:before {
+  content: "\f127";
+}
+#main article.post.format-link header:before, #tinymce.wp-editor.post.format-link header:before {
+  content: "\f103";
+}
+#main article.post.sticky header:before, #tinymce.wp-editor.post.sticky header:before {
+  content: "\f109";
+}
+
+.more-link .icon.icon-next:before {
+  font-family: 'dashicons';
+  font-size: 20px;
+  vertical-align: top;
+  content: "\f345";
+}
+
+/* =============================================================================
+   Comments
+   ========================================================================== */
+#commentform .input-group-addon:before {
+  float: left;
+  font-family: 'dashicons';
+  font-size: 20px;
+  margin: 0 -5px 0 -4px;
+}
+#commentform .author .input-group-addon:before {
+  content: "\f110";
+}
+#commentform .email .input-group-addon:before {
+  content: "\f466";
+}
+#commentform .url .input-group-addon:before {
+  content: "\f103";
+}
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+#footer .icon.icon-wordpress:before {
+  font-family: 'dashicons';
+  font-size: 20px;
+  vertical-align: top;
+  content: "\f120";
+}
+#footer b.icon.icon-arrow-down {
+  display: none;
+}
+
+#social-menu ul li a:before {
+  content: '\f408';
+  font-family: 'Genericons';
+  font-size: 19px;
+}
+#social-menu ul li a[href*="feed"]:before {
+  content: '\f413';
+}
+#social-menu ul li a[href*="facebook"]:before {
+  content: '\f203';
+}
+#social-menu ul li a[href*="google"]:before {
+  content: '\f206';
+}
+#social-menu ul li a[href*="pinterest"]:before {
+  content: '\f210';
+}
+#social-menu ul li a[href*="github"]:before {
+  content: '\f200';
+}
+#social-menu ul li a[href*="linkedin"]:before {
+  content: '\f208';
+}
+#social-menu ul li a[href*="wordpress"]:before {
+  content: '\f205';
+}
+#social-menu ul li a[href*="twitter"]:before {
+  content: '\f202';
+}
+#social-menu ul li a[href*="dribbble"]:before {
+  content: '\f201';
+}
+#social-menu ul li a[href*="vimeo"]:before {
+  content: '\f212';
+}
+#social-menu ul li a[href*="youtube"]:before {
+  content: '\f213';
+}
+#social-menu ul li a[href*="flickr"]:before {
+  content: '\f211';
+}
+#social-menu ul li a[href*="tumblr"]:before {
+  content: '\f214';
+}
+#social-menu ul li a[href*="instagram"]:before {
+  content: '\f215';
+}
+#social-menu ul li a[href*="skype.com"]:before {
+  content: '\f220';
+}
+#social-menu ul li a[href*="digg"]:before {
+  content: '\f221';
+}
+#social-menu ul li a[href*="reddit"]:before {
+  content: '\f222';
+}
+#social-menu ul li a[href*="stumbleupon"]:before {
+  content: '\f223';
+}
+#social-menu ul li a[href*="polldaddy"]:before {
+  content: '\f217';
+}
+#social-menu ul li a[href*="codepen.com"]:before {
+  content: '\f216';
+}
+
+/* =============================================================================
+   Footer and sidebar
+   ========================================================================== */
+#secondary .widget .widget-title:before, #footer .widget .widget-title:before {
+  content: "\f155";
+  float: left;
+  font-family: 'dashicons';
+  font-size: 18px;
+  margin: 0 8px 0 0;
+}
+#secondary .widget.widget_archive .widget-title:before, #footer .widget.widget_archive .widget-title:before {
+  content: "\f318";
+}
+#secondary .widget.widget_categories .widget-title:before, #footer .widget.widget_categories .widget-title:before {
+  content: "\f318";
+}
+#secondary .widget.widget_calendar .widget-title:before, #footer .widget.widget_calendar .widget-title:before {
+  content: "\f145";
+}
+#secondary .widget.widget_pages .widget-title:before, #footer .widget.widget_pages .widget-title:before {
+  content: "\f105";
+}
+#secondary .widget.widget_recent_entries .widget-title:before, #footer .widget.widget_recent_entries .widget-title:before {
+  content: "\f105";
+}
+#secondary .widget.widget_meta .widget-title:before, #footer .widget.widget_meta .widget-title:before {
+  content: "\f111";
+}
+#secondary .widget.widget_recent_comments .widget-title:before, #footer .widget.widget_recent_comments .widget-title:before {
+  content: "\f101";
+}
+#secondary .widget.widget_search .widget-title:before, #footer .widget.widget_search .widget-title:before {
+  content: "\f179";
+}
+#secondary .widget.widget_text .widget-title:before, #footer .widget.widget_text .widget-title:before {
+  content: "\f119";
+}
+#secondary .widget.widget_tag_cloud .widget-title:before, #footer .widget.widget_tag_cloud .widget-title:before {
+  content: "\f323";
+}
+#secondary .widget.widget_rss .widget-title:before, #footer .widget.widget_rss .widget-title:before {
+  content: "\f303";
+}
+#secondary .widget.widget_rss_links .widget-title:before, #footer .widget.widget_rss_links .widget-title:before {
+  content: "\f303";
+}
+#secondary .widget.widget_twitter_timeline .widget-title:before, #footer .widget.widget_twitter_timeline .widget-title:before {
+  content: "\f301";
+}
+#secondary .widget.widget_facebook_likebox .widget-title:before, #footer .widget.widget_facebook_likebox .widget-title:before {
+  content: "\f304";
+}

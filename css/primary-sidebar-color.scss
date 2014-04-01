@@ -1,0 +1,12 @@
+/**
+ * This stylesheet will manage all sidebar color-related styles.
+ *
+ * @package Follet_Theme
+ * @since   1.0
+ */
+
+$sidebar: #FFFFFF;
+
+#content {
+	background-color: $sidebar;
+}

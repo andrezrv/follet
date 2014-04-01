@@ -1,0 +1,83 @@
+/**
+ * This stylesheet will manage all primary color-related styles.
+ *
+ * @package Follet_Theme
+ * @since   1.0
+ */
+/* =============================================================================
+   General
+   ========================================================================== */
+a {
+  color: #428bca;
+}
+
+/* Navigation pills
+   ========================================================================== */
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color: #428bca;
+}
+
+/* Buttons
+   ========================================================================== */
+.btn.btn-primary {
+  background-color: #428bca;
+}
+
+/* Top navigation
+   ========================================================================== */
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: #428bca;
+}
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+#main-header {
+  background-color: #428bca;
+}
+
+/* =============================================================================
+   Content
+   ========================================================================== */
+/* Articles
+   ========================================================================== */
+#main article {
+  border-bottom: 2px solid #428bca;
+}
+
+.author-info {
+  border-bottom: 2px solid #428bca;
+}
+
+/* Sidebar
+   ========================================================================== */
+#secondary .widget .widget-title {
+  background-color: #428bca;
+}
+#secondary .widget .widget-title + .separator {
+  border-top: 2px solid #428bca;
+}
+
+/* =============================================================================
+   Comments
+   ========================================================================== */
+#comments .reply a {
+  border-bottom: 1px dotted #428bca;
+}
+
+.comment-metadata a {
+  border-bottom: 1px dotted #428bca;
+}
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+#footer .credits a:hover {
+  color: #428bca;
+}
+
+#social-menu ul li a:hover {
+  color: #428bca;
+}

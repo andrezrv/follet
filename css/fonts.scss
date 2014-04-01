@@ -1,0 +1,183 @@
+/**
+ * This stylesheet will manage all font-related styles.
+ *
+ * @package Follet_Theme
+ * @since   1.0
+ */
+
+/* =============================================================================
+   Definitions
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic&subset=latin,latin-ext,cyrillic-ext,greek-ext,greek,vietnamese,cyrillic);
+@import url(http://fonts.googleapis.com/css?family=Neuton:400,200,300,400italic,700,800&subset=latin,latin-ext);
+
+@font-face {
+	font-family: 'Genericons';
+	src: url('../includes/genericons/font/genericons-regular-webfont.eot');
+	src: url('../includes/genericons/font/genericons-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../includes/genericons/font/genericons-regular-webfont.woff') format('woff'),
+		 url('../includes/genericons/font/genericons-regular-webfont.ttf') format('truetype'),
+		 url('../includes/genericons/font/genericons-regular-webfont.svg#genericonsregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-size: 15px;
+	line-height: 28px;
+	font-family: 'Open Sans', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+
+.site-branding {
+	h1, h2 {
+		font-family: 'Neuton', serif;
+	}
+	h1 {
+		font-size: 56px;
+		font-weight: bold;
+		line-height: 56px;
+		a {
+			&:hover, &:focus, &:active {
+				text-decoration: none;
+			}
+		}
+	}
+	h2 {
+		font-size: 38px;
+	}
+}
+
+/* =============================================================================
+   Content
+   ========================================================================== */
+
+.page-header {
+	h1 {
+		font-family: 'Neuton', serif;
+	}
+}
+
+#main article,
+#tinymce.wp-editor {
+	h1, h2, h3, h4 {
+		font-family: 'Neuton', serif;
+	}
+	header {
+		h1 {
+			font-weight: bold;
+			font-size: 46px;
+			a {
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	.entry-summary {
+		font-size: 18px;
+	}
+}
+
+.format-aside {
+	.entry-content {
+		font-size: 20px;
+	}
+}
+
+.format-status {
+	.entry-content {
+		font-size: 20px;
+	}
+}
+
+.format-link {
+	.entry-content {
+		font-size: 20px;
+	}
+}
+
+.wp-caption-text {
+	text-align: center;
+	font-style: italic;
+}
+
+.carousel-caption {
+	font-family: 'Open Sans', sans-serif;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		a {
+			font-family: 'Neuton', serif;
+		}
+	}
+}
+
+/* =============================================================================
+   Footer and sidebar
+   ========================================================================== */
+
+#secondary,
+#footer {
+	.widget {
+		.widget-title {
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+/* =============================================================================
+   Comments
+   ========================================================================== */
+
+#comments {
+	h1, h2, h3, h4 {
+		font-family: 'Neuton', serif;
+	}
+	.comments-title {
+		font-size: 36px;
+	}
+	#reply-title {
+		font-size: 36px;
+	}
+}
+
+.comment-author,
+.comment-metadata {
+	line-height: 60px;
+}
+
+.comment-author {
+	font-family: 'Neuton', serif;
+	font-size: 26px;
+}
+
+.form-allowed-tags {
+	code {
+		white-space: normal;
+	}
+}
+
+/* =============================================================================
+   Gravatar profile (Jetpack)
+   ========================================================================== */
+
+.widget-grofile {
+	#secondary &.widget h4:not(.widget-title) {
+		font-family: 'Neuton', serif;
+		font-size: 26px;
+	}
+	#footer &.widget h4:not(.widget-title) {
+		font-family: 'Neuton', serif;
+		font-size: 26px;
+	}
+}

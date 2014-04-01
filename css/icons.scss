@@ -1,0 +1,391 @@
+/**
+ * This stylesheet will manage all icon-related styles.
+ *
+ * @package Follet_Theme
+ * @since   1.0
+ */
+
+/* =============================================================================
+   Top navigation
+   ========================================================================== */
+
+#top-navigation .dropdown-submenu {
+	> a:after {
+		content: "\f345";
+		font-family: 'dashicons';
+		font-size: 12px;
+		line-height: 20px;
+		position: absolute;
+		right: 15px;
+	}
+}
+
+.nav-links {
+	.icon {
+		&:before {
+			font-family: 'dashicons';
+		    font-size: 20px;
+		    vertical-align: top;
+		}
+		&.icon-previous:before {
+			content: "\f341";
+		}
+		&.icon-next:before {
+			content: "\f345";
+		}
+	}
+}
+
+b.icon.icon-arrow-down:before {
+	content: "\f347";
+	font-family: 'dashicons';
+    font-size: 11px;
+    margin: 0 2px 0 5px;
+    vertical-align: middle;
+}
+
+/* =============================================================================
+   Content
+   ========================================================================== */
+
+.breadcrumb {
+	li.home a {
+		&:before {
+			content: "\f102";
+		    font-family: 'dashicons';
+		    font-size: 20px;
+		    vertical-align: top;
+		}
+	}
+	> li + li:before {
+	    content: "\f345";
+	    font-family: 'dashicons';
+	    font-size: 12px;
+	    vertical-align: middle;
+	}
+}
+
+.entry-meta {
+	.icon {
+		&:before {
+			font-family: 'dashicons';
+		    font-size: 20px;
+		    vertical-align: bottom;
+		}
+		&.icon-user:before {
+			content: "\f110";
+		}
+		&.icon-date:before {
+			content: "\f145";
+		}
+		&.icon-comments:before {
+			content: "\f101";
+		}
+		&.icon-edit:before {
+			content: "\f464";
+		}
+		&.icon-category:before {
+			content: "\f318";
+		}
+		&.icon-tag:before {
+			content: "\f323";
+		}
+		&.icon-permalink:before {
+			content: "\f103";
+		}
+	}
+}
+
+.contact-info {
+	.genericon {
+		font-size: 19px;
+		margin-bottom: 0;
+		margin-right: 4px;
+		margin-top: 5px;
+	}
+	.genericon-facebook {
+		color: #3B5998;
+	}
+	.genericon-twitter {
+		color: #33CCFF;
+	}
+	.genericon-googleplus {
+		color: #DD4B39;
+	}
+	.genericon-wordpress {
+		color: #21759B;
+	}
+	.genericon-pinterest {
+		color: #C8232C;
+	}
+	.genericon-github {
+		color: #4183C4;
+	}
+	.genericon-flickr {
+		color: #FF0084;
+	}
+	.genericon-linkedin {
+		color: #0E76A8;
+	}
+	.genericon-instagram {
+		color: #3F729B;
+	}
+	.genericon-youtube {
+		color: #C4302B;
+	}
+	.genericon-vimeo {
+		color: #1AB7EA;
+	}
+}
+
+#main article, #tinymce.wp-editor {
+	&.post {
+		header {
+			&:before {
+				cursor: default;
+				float: right;
+				font-family: 'dashicons';
+				font-size: 46px;
+				margin-top: 10px;
+				body.rtl & {
+					float: left;
+				}
+			}
+		}
+		&.format-gallery header:before {
+			content: "\f161";
+		}
+		&.format-image header:before {
+			content: "\f128";
+		}
+		&.format-aside header:before {
+			content: "\f123";
+		}
+		&.format-video header:before {
+			content: "\f126";
+		}
+		&.format-status header:before {
+			content: "\f130";
+		}
+		&.format-quote header:before {
+			content: "\f122";
+		}
+		&.format-chat header:before {
+			content: "\f125";
+		}
+		&.format-audio header:before {
+			content: "\f127";
+		}
+		&.format-link header:before {
+			content: "\f103";
+		}
+		&.sticky header:before {
+			content: "\f109";
+		}
+	}
+}
+
+.more-link {
+	.icon.icon-next:before {
+		font-family: 'dashicons';
+	    font-size: 20px;
+	    vertical-align: top;
+		content: "\f345";
+	}
+}
+
+/* =============================================================================
+   Comments
+   ========================================================================== */
+
+#commentform {
+	.input-group-addon:before {
+		float: left;
+		font-family: 'dashicons';
+		font-size: 20px;
+		margin: 0 -5px 0 -4px;
+	}
+	.author .input-group-addon:before {
+		content: "\f110";
+	}
+	.email .input-group-addon:before {
+		content: "\f466";
+	}
+	.url .input-group-addon:before {
+		content: "\f103";
+	}
+}
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+
+#footer {
+	.icon.icon-wordpress:before {
+		font-family: 'dashicons';
+	    font-size: 20px;
+	    vertical-align: top;
+		content: "\f120";
+	}
+	b.icon.icon-arrow-down {
+		display: none;
+	}
+}
+
+#social-menu {
+	ul {
+		li {
+			a:before {
+				content: '\f408';
+				font-family: 'Genericons';
+				font-size: 19px;
+			}
+			a[href*="feed"]:before {
+				content: '\f413';
+			}
+			a[href*="facebook"]:before {
+				content: '\f203';
+			}
+			a[href*="google"]:before {
+				content: '\f206';
+			}
+			a[href*="pinterest"]:before {
+				content: '\f210';
+			}
+			a[href*="github"]:before {
+				content: '\f200';
+			}
+			a[href*="linkedin"]:before {
+				content: '\f208';
+			}
+			a[href*="wordpress"]:before {
+				content: '\f205';
+			}
+			a[href*="twitter"]:before {
+				content: '\f202';
+			}
+			a[href*="dribbble"]:before {
+				content: '\f201';
+			}
+			a[href*="vimeo"]:before {
+				content: '\f212';
+			}
+			a[href*="youtube"]:before {
+				content: '\f213';
+			}
+			a[href*="flickr"]:before {
+				content: '\f211';
+			}
+			a[href*="tumblr"]:before {
+				content: '\f214';
+			}
+			a[href*="instagram"]:before {
+				content: '\f215';
+			}
+			a[href*="skype.com"]:before {
+				content: '\f220';
+			}
+			a[href*="digg"]:before {
+				content: '\f221';
+			}
+			a[href*="reddit"]:before {
+				content: '\f222';
+			}
+			a[href*="stumbleupon"]:before {
+				content: '\f223';
+			}
+			a[href*="polldaddy"]:before {
+				content: '\f217';
+			}
+			a[href*="codepen.com"]:before {
+				content: '\f216';
+			}
+		}
+	}
+}
+
+/* =============================================================================
+   Footer and sidebar
+   ========================================================================== */
+
+#secondary, #footer {
+	.widget {
+		.widget-title:before {
+			content: "\f155";
+			float: left;
+			font-family: 'dashicons';
+			font-size: 18px;
+			margin: 0 8px 0 0;
+		}
+		&.widget_archive {
+			.widget-title:before {
+				content: "\f318";
+			}
+		}
+		&.widget_categories {
+			.widget-title:before {
+				content: "\f318";
+			}
+		}
+		&.widget_calendar {
+			.widget-title:before {
+				content: "\f145";
+			}
+		}
+		&.widget_pages {
+			.widget-title:before {
+				content: "\f105";
+			}
+		}
+		&.widget_recent_entries {
+			.widget-title:before {
+				content: "\f105";
+			}
+		}
+		&.widget_meta {
+			.widget-title:before {
+				content: "\f111";
+			}
+		}
+		&.widget_recent_comments {
+			.widget-title:before {
+				content: "\f101";
+			}
+		}
+		&.widget_search {
+			.widget-title:before {
+				content: "\f179";
+			}
+		}
+		&.widget_text {
+			.widget-title:before {
+				content: "\f119";
+			}
+		}
+		&.widget_tag_cloud {
+			.widget-title:before {
+				content: "\f323";
+			}
+		}
+		&.widget_rss {
+			.widget-title:before {
+				content: "\f303";
+			}
+		}
+		&.widget_rss_links {
+			.widget-title:before {
+				content: "\f303";
+			}
+		}
+		&.widget_twitter_timeline {
+			.widget-title:before {
+				content: "\f301";
+			}
+		}
+		&.widget_facebook_likebox {
+			.widget-title:before {
+				content: "\f304";
+			}
+		}
+	}
+}

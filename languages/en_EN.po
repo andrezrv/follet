@@ -1,0 +1,467 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Follet Theme\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2014-03-30 12:51-0300\n"
+"PO-Revision-Date: 2014-03-30 12:51-0300\n"
+"Last-Translator: Andrés Villarreal <andrezrv@gmail.com>\n"
+"Language-Team: Follet <andrezrv@gmail.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-Basepath: C:\\Users\\Andrés\\Developments\\vagrants\\clfp\\www"
+"\\website\\dev\\app\\content\\themes\\follet\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: C:\\Users\\Andrés\\Developments\\vagrants\\clfp\\www"
+"\\website\\dev\\app\\content\\themes\\follet\n"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! That page can&rsquo;t be found."
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/404.php:23
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/404.php:32
+msgid "Most Used Categories"
+msgstr "Most Used Categories"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/404.php:49
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Try looking in the monthly archives. %1$s"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/archive.php:35
+#, php-format
+msgid "Author: %s"
+msgstr "Author: %s"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/archive.php:38
+#, php-format
+msgid "Day: %s"
+msgstr "Day: %s"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/archive.php:41
+#, php-format
+msgid "Month: %s"
+msgstr "Month: %s"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/archive.php:41
+msgid "F Y"
+msgstr "F Y"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/archive.php:44
+#, php-format
+msgid "Year: %s"
+msgstr "Year: %s"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/archive.php:44
+msgid "Y"
+msgstr "Y"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/archive.php:47
+msgid "Asides"
+msgstr "Asides"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/archive.php:50
+msgid "Galleries"
+msgstr "Galleries"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/archive.php:53
+msgid "Images"
+msgstr "Images"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/archive.php:56
+msgid "Videos"
+msgstr "Videos"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/archive.php:59
+msgid "Quotes"
+msgstr "Quotes"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/archive.php:62
+msgid "Links"
+msgstr "Links"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/archive.php:65
+msgid "Statuses"
+msgstr "Statuses"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/archive.php:68
+msgid "Audios"
+msgstr "Audios"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/archive.php:71
+msgid "Chats"
+msgstr "Chats"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/archive.php:74
+msgid "Archives"
+msgstr "Archives"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/comments.php:33
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/comments.php:47
+msgid "Comment navigation"
+msgstr "Comment navigation"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/comments.php:34
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/comments.php:48
+msgid "&larr; Older Comments"
+msgstr "&larr; Older Comments"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/comments.php:35
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/comments.php:49
+msgid "Newer Comments &rarr;"
+msgstr "Newer Comments &rarr;"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/comments.php:57
+msgid "Comments are closed."
+msgstr "Comments are closed."
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/comments.php:64
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:219
+msgid "Name:"
+msgstr "Name:"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/comments.php:65
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:220
+msgid "Email Address:"
+msgstr "Email Address:"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/comments.php:66
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:221
+msgid "Your Website:"
+msgstr "Your Website:"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~3.PHP:95
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~3.PHP:174
+msgid "Top menu"
+msgstr "Top menu"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~3.PHP:125
+msgid "Primary Sidebar"
+msgstr "Primary Sidebar"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~3.PHP:136
+msgid "Footer Sidebar #1"
+msgstr "Footer Sidebar #1"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~3.PHP:145
+msgid "Footer Sidebar #2"
+msgstr "Footer Sidebar #2"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~3.PHP:154
+msgid "Footer Sidebar #3"
+msgstr "Footer Sidebar #3"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:41
+msgid "Top Navigation"
+msgstr "Top Navigation"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:46
+#, php-format
+msgid ""
+"%1$sTip:%2$s Even with \"Show Top Navigation\" checked, Top Navigation will "
+"not show if you have not set a custom menu under Navigation > Top Menu."
+msgstr ""
+"%1$sTip:%2$s Even with \"Show Top Navigation\" checked, Top Navigation will "
+"not show if you have not set a custom menu under Navigation > Top Menu."
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:71
+msgid "Show Top Navigation"
+msgstr "Show Top Navigation"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:90
+msgid "Fix to Top"
+msgstr "Fix to Top"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:109
+msgid "Show Search Form"
+msgstr "Show Search Form"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:128
+msgid "Color Scheme"
+msgstr "Color Scheme"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:134
+msgid "Light"
+msgstr "Light"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:135
+msgid "Dark"
+msgstr "Dark"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:147
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:196
+msgid "Header Logo"
+msgstr "Header Logo"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:152
+msgid ""
+"Here you can upload your own logo and use it instead of the Site Title & "
+"Tagline values."
+msgstr ""
+"Here you can upload your own logo and use it instead of the Site Title & "
+"Tagline values."
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:177
+msgid "Show instead of Site Title & Tagline"
+msgstr "Show instead of Site Title & Tagline"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:224
+msgid "Display Site Title"
+msgstr "Display Site Title"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:243
+msgid "Display Tagline"
+msgstr "Display Tagline"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:258
+msgid "Body Background Color"
+msgstr "Body Background Color"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:272
+msgid "Primary Color"
+msgstr "Primary Color"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:281
+msgid ""
+"This is the main color of the theme. It is used for links, separators, "
+"buttons and backgrounds for widget titles in the primary sidebar."
+msgstr ""
+"This is the main color of the theme. It is used for links, separators, "
+"buttons and backgrounds for widget titles in the primary sidebar."
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:306
+msgid "Secondary Color"
+msgstr "Secondary Color"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:315
+msgid ""
+"This is the alternative color for the theme. It is used for contrasts such "
+"as link hovers and a number of design elements."
+msgstr ""
+"This is the alternative color for the theme. It is used for contrasts such "
+"as link hovers and a number of design elements."
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:340
+msgid "Header Background Color"
+msgstr "Header Background Color"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:349
+msgid ""
+"This color will display as the header background when you have not set a "
+"header image. You can choose to ignore this setting if you want a "
+"transparent background."
+msgstr ""
+"This color will display as the header background when you have not set a "
+"header image. You can choose to ignore this setting if you want a "
+"transparent background."
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:375
+msgid "Ignore Header Background Color"
+msgstr "Ignore Header Background Color"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/CUSTOM~1.PHP:394
+msgid "Primary Sidebar Background Color"
+msgstr "Primary Sidebar Background Color"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/CLASS-~3.PHP:122
+msgid ""
+"This post is password protected. To view it please enter your password below:"
+msgstr ""
+"This post is password protected. To view it please enter your password below:"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/CLASS-~3.PHP:123
+msgid "Password"
+msgstr "Password"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/CLASS-~3.PHP:123
+msgid "Submit"
+msgstr "Submit"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/CLASS-~3.PHP:220
+#, php-format
+msgid "Page %s"
+msgstr "Page %s"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/CLASS-~1.PHP:47
+msgid "Invalid operation: you cannot clone an instance of "
+msgstr "Invalid operation: you cannot clone an instance of "
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/CLASS-~1.PHP:62
+msgid "Invalid operation: you cannot unserialize an instance of "
+msgstr "Invalid operation: you cannot unserialize an instance of "
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:48
+msgid "0 Comments"
+msgstr "0 Comments"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:49
+msgid "1 Comment"
+msgstr "1 Comment"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:50
+#, php-format
+msgid "%s Comments"
+msgstr "%s Comments"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:130
+msgid "Pages"
+msgstr "Pages"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:135
+msgid "Next page"
+msgstr "Next page"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:136
+msgid "Previous page"
+msgstr "Previous page"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:161
+msgid "Edit"
+msgstr "Edit"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:186
+#, php-format
+msgid "%1$sContinue reading %2$s"
+msgstr "%1$sContinue reading %2$s"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:269
+msgid "Home"
+msgstr "Home"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:322
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:327
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:333
+#, php-format
+msgid "Archive for %s"
+msgstr "Archive for %s"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:338
+msgid "Author Archive"
+msgstr "Author Archive"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:343
+msgid "Blog Archives"
+msgstr "Blog Archives"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/inc/FOLLET~1/FOLLET~3.PHP:348
+msgid "Search Results"
+msgstr "Search Results"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Search Results for: %s"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/SEARCH~1.PHP:10
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/SEARCH~1.PHP:11
+msgid "Search for:"
+msgstr "Search for:"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/SEARCH~1.PHP:11
+msgid "Search"
+msgstr "Search"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/AUTHOR~1.PHP:20
+msgid "All posts"
+msgstr "All posts"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/BACK-T~1.PHP:11
+msgid "Back to top"
+msgstr "Back to top"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/CONTEN~1.PHP:15
+msgid ", "
+msgstr ", "
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/CONTEN~1.PHP:20
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Posted in %1$s"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/CONTEN~1.PHP:29
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Tagged %1$s"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/CONTEN~1.PHP:36
+msgid "Permalink"
+msgstr "Permalink"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/CONTEN~2.PHP:14
+msgid "Nothing Found"
+msgstr "Nothing Found"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/CONTEN~2.PHP:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/CONTEN~2.PHP:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/CONTEN~2.PHP:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/FOOTER~1.PHP:15
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Proudly powered by %s"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/FOOTER~1.PHP:23
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s by %2$s."
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/PAGING~1.PHP:14
+msgid "Posts navigation"
+msgstr "Posts navigation"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/PAGING~1.PHP:20
+#, php-format
+msgid "%s Older posts"
+msgstr "%s Older posts"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/PAGING~1.PHP:29
+#, php-format
+msgid "Newer posts %s"
+msgstr "Newer posts %s"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/POST-N~1.PHP:14
+msgid "Post navigation"
+msgstr "Post navigation"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/POST-N~1.PHP:20
+msgid "<span class=\"meta-nav\">&larr; %title</span>"
+msgstr "<span class=\"meta-nav\">&larr; %title</span>"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/POST-N~1.PHP:24
+msgid "<span class=\"meta-nav\">%title &rarr;</span>"
+msgstr "<span class=\"meta-nav\">%title &rarr;</span>"
+
+#: C:/Users/ANDRS~1/DEVELO~1/vagrants/clfp/www/website/dev/app/content/themes/follet/TEMPLA~1/TOP-NA~1.PHP:22
+msgid "Toggle navigation"
+msgstr "Toggle navigation"

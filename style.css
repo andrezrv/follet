@@ -1,0 +1,872 @@
+@charset "UTF-8";
+
+
+/**
+ * Follet
+ *
+ * A fully responsive, customizable, translation-ready and extendable theme. SEO
+ * friendly via schema.org microdata, and compatible with all post formats. It
+ * features intelligent widget areas, which won't show if no widgets are
+ * attached to them. Customizable via WordPress Customizer and a lot of
+ * easy-to-use options under the hood. Clean and lean PHP, HTML, CSS and JS
+ * code, written by WordPress Coding Standards. Works impressively well right
+ * out of the box, and can be used either as a main theme, a parent theme for
+ * your own child theme, or as a starter theme to create your own version.
+ *
+ * @package   Follet_Theme
+ * @version   1.0-dev
+ * @author    Andrés Villarreal <andrezrv@gmail.com>
+ * @license   GNU General Public License
+ * @link      http://github.com/andrezrv/follet
+ * @copyright 2014 Andrés Villarreal
+ *
+ * @wordpress-theme
+ * Theme Name: Follet
+ * Theme URI: http://github.com/andrezrv/follet
+ * Author: Andr&eacute;s Villarreal
+ * Author URI: http://www.andrezrv.com
+ * Description: A fully responsive, customizable, translation-ready and extendable theme. SEO friendly via schema.org microdata, and compatible with all post formats. It features intelligent widget areas, which won't show if no widgets are attached to them. Customizable via WordPress Customizer and a lot of easy-to-use options under the hood. Clean and lean PHP, HTML, CSS and JS code, written by WordPress Coding Standards. Works impressively well right out of the box, and can be used either as a main theme, a parent theme for your own child theme, or as a starter theme to create your own version.
+ * Version: 1.0-dev
+ * License: GNU General Public License
+ * License URI: license.txt
+ * Text Domain: follet_theme
+ * Domain Path: /languages/
+ * Tags: blue, red, white, custom-colors, custom-background, custom-header, custom-menu, editor-style, featured-images, full-width-template, right-sidebar, light, photoblogging, responsive-layout, sticky-post, threaded-comments, translation-ready, two-columns, one-column
+ */
+
+/* =============================================================================
+   Reset box-sizing
+   ========================================================================== */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* =============================================================================
+   WordPress required styles
+   ========================================================================== */
+
+.wp-caption {
+  max-width: 100%;
+}
+
+.wp-caption img {
+  height: auto;
+  width: 100%;
+}
+
+.wp-caption-text {
+  padding: 10px;
+}
+
+.bypostauthor {
+  display: block;
+}
+
+/* =============================================================================
+   Global styles
+   ========================================================================== */
+
+a {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:active,
+a:link,
+a:visited {
+  text-decoration: none;
+  outline: none;
+}
+
+ul,
+ol {
+  padding-left: 35px;
+}
+
+input[type="text"],
+input[type="password"] {
+  border-radius: 0;
+}
+
+select,
+textarea {
+  border-radius: 0;
+}
+
+.form-control,
+.input-group-addon {
+  border-radius: 0;
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+ul.list-group li.list-group-item {
+  border-radius: 0;
+  margin: 0 0 -1px !important;
+}
+
+.breadcrumb {
+  border-radius: 0;
+  margin-bottom: 15px;
+  padding: 0 0 20px 0;
+}
+
+/* Genericons
+   ========================================================================== */
+
+.genericon {
+  line-height: normal;
+  margin-top: 6px;
+}
+
+/* Bootstrap Panels
+   ========================================================================== */
+
+.panel {
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.panel.panel-heading,
+.panel.panel-body {
+  margin: 0 0 -1px !important;
+}
+
+/* Navtabs
+   ========================================================================== */
+
+.nav.nav-tabs,
+.nav.nav-pills {
+  margin-bottom: 15px;
+}
+
+.nav.nav-tabs > li,
+.nav.nav-pills > li {
+  margin: 0 !important;
+}
+
+.nav.nav-tabs > li a,
+.nav.nav-pills > li a {
+  border-radius: 0;
+}
+
+/* Bootstrap carousel
+   ========================================================================== */
+
+.carousel-caption {
+  left: 0;
+  padding-bottom: 30px;
+  right: 0;
+}
+
+.carousel-indicators li:not(.active) {
+  margin: 0 3px;
+}
+
+.carousel-indicators li.active {
+  margin: 0 2px -1px;
+}
+
+/* =============================================================================
+   Image management
+   ========================================================================== */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.alignright {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.aligncenter {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.format-image .entry-content > .wp-caption {
+  width: 100% !important;
+}
+
+.format-image .entry-content > .wp-caption img {
+  width: 100% !important;
+}
+
+.alignnone {
+  margin: 0 0 20px;
+}
+
+.gallery-item {
+  margin: 0 !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-icon img {
+  border: none !important;
+  width: 100%;
+}
+
+.gallery-caption {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.protected-post-form .input-group {
+  width: 300px;
+}
+
+.page-header {
+  margin: 0 0 20px;
+  padding-bottom: 20px;
+}
+
+.page-header h1 {
+  margin: 0;
+}
+
+/* =============================================================================
+   Top navigation
+   ========================================================================== */
+
+#top-navigation-wrapper {
+  margin: 0;
+  padding: 10px 0;
+}
+
+#top-navigation-wrapper.navbar-fixed-top + #main-header,
+#top-navigation-wrapper.navbar-fixed-top + #content-wrapper {
+  margin-top: 68px;
+}
+
+body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
+  margin-top: 32px;
+}
+
+#top-navigation-menu-navbar {
+  position: relative;
+}
+
+#top-navigation-searchform-show {
+  float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+#top-navigation-searchform-copy {
+  margin-right: 15px;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
+
+.dropdown-menu {
+  border-radius: 0px;
+}
+
+/* =============================================================================
+   Header styles
+   ========================================================================== */
+
+#main-header {
+  background-position: 0;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.site-branding {
+  min-height: 0;
+  padding: 10px 30px 20px;
+}
+
+.site-branding h1 {
+  margin-top: 10px;
+}
+
+.site-branding h2 {
+  margin: 10px 0;
+}
+
+/* =============================================================================
+   Article
+   ========================================================================== */
+
+#tinymce.wp-editor {
+  padding: 15px;
+}
+
+#main article {
+  overflow: hidden;
+}
+
+#main article,
+#tinymce.wp-editor {
+  margin-bottom: 20px;
+}
+
+#main article h1,
+#main article h2,
+#main article h3,
+#main article h4,
+#tinymce.wp-editor h1,
+#tinymce.wp-editor h2,
+#tinymce.wp-editor h3,
+#tinymce.wp-editor h4 {
+  margin-top: 0;
+}
+
+#main article header,
+#tinymce.wp-editor header {
+  margin-bottom: 25px;
+}
+
+#main article header h1,
+#tinymce.wp-editor header h1 {
+  margin-top: 0;
+}
+
+#main article footer,
+#tinymce.wp-editor footer {
+  padding: 25px 0;
+}
+
+#main article ul li,
+#tinymce.wp-editor ul li {
+  margin-bottom: 10px;
+}
+
+#main article .entry-content,
+#main article .entry-summary,
+#tinymce.wp-editor .entry-content,
+#tinymce.wp-editor .entry-summary {
+  overflow: hidden;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+#main article .entry-summary,
+#tinymce.wp-editor .entry-summary {
+  margin-bottom: 25px;
+}
+
+#main article table,
+#tinymce.wp-editor table {
+  margin-bottom: 20px;
+}
+
+.entry-header > .avatar,
+.author-info > .avatar {
+  border-radius: 43px;
+  float: left;
+  margin-right: 20px;
+}
+
+.author-info {
+  overflow: hidden;
+  padding: 25px 0;
+}
+
+.author-info .author-description {
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 101px;
+}
+
+.contact-info {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 101px;
+  padding: 0;
+}
+
+.contact-info li {
+  display: inline;
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+.entry-meta {
+  overflow: hidden;
+}
+
+.entry-meta section {
+  float: left;
+  margin-right: 15px;
+}
+
+body.rtl .entry-meta section {
+  float: right;
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+.entry-meta section.time {
+  cursor: help;
+}
+
+.entry-thumbnail {
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.entry-thumbnail.landscape img {
+  height: auto;
+  width: 100%;
+}
+
+.entry-thumbnail.portrait {
+  float: right;
+  margin-left: 20px;
+  max-width: 33%;
+}
+
+.page-links {
+  float: right;
+}
+
+.page-links .links-container {
+  border-radius: 0;
+  margin-top: 20px;
+}
+
+.page-links .links-container .btn {
+  border-radius: 0;
+  padding: 10px 15px;
+}
+
+.page-links .pagination-text:hover {
+  cursor: default;
+}
+
+.gallery + p {
+  margin-top: 10px;
+}
+
+/* =============================================================================
+   Post navigation
+   ========================================================================== */
+
+.navigation.post-navigation {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.dropdown-toggle .dashicons {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.dropdown-menu li a {
+  padding: 10px 15px;
+}
+
+.dropdown-menu > li > a {
+  -webkit-transition: none;
+  transition: none;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  -webkit-transition: none;
+  transition: none;
+}
+
+/* =============================================================================
+   Comments
+   ========================================================================== */
+
+#comments {
+  overflow: hidden;
+}
+
+#comments h1,
+#comments h2,
+#comments h3,
+#comments h4 {
+  margin-top: 0;
+}
+
+#comments .reply {
+  float: right;
+  margin-top: 10px;
+}
+
+#comments #reply-title {
+  margin-top: 10px;
+}
+
+ol.comment-list {
+  list-style: none;
+  margin: 30px 0;
+  padding: 0;
+}
+
+ol.comment-list li.comment {
+  margin: 20px 0;
+}
+
+ol.comment-list ol.children {
+  list-style: none;
+}
+
+.comment-body {
+  overflow: hidden;
+}
+
+.comment-meta {
+  overflow: hidden;
+}
+
+.comment-author,
+.comment-metadata {
+  float: left;
+}
+
+.comment-author {
+  margin-right: 20px;
+}
+
+.comment-author img {
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.comment-author .says {
+  display: none;
+}
+
+.comment-metadata .edit-link {
+  margin-left: 10px;
+}
+
+.comment-content {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+#commentform .input-group {
+  margin-bottom: 10px;
+}
+
+/* =============================================================================
+   Sidebar and footer
+   ========================================================================== */
+
+#primary,
+#secondary {
+  padding: 30px 30px;
+}
+
+#secondary .widget.widget_archive select,
+#footer .widget.widget_archive select {
+  margin-top: 20px;
+}
+
+#secondary .widget.widget_categories select,
+#footer .widget.widget_categories select {
+  margin-top: 20px;
+}
+
+#secondary .widget.widget_search hr,
+#footer .widget.widget_search hr {
+  margin-bottom: 20px;
+}
+
+#secondary .widget.widget_rss .widget-title > a.rsswidget img,
+#footer .widget.widget_rss .widget-title > a.rsswidget img {
+  display: none;
+}
+
+#secondary .widget.widget_rss .widget-title > a.rsswidget,
+#footer .widget.widget_rss .widget-title > a.rsswidget {
+  display: inline-block;
+}
+
+#secondary .widget.widget_rss a.rsswidget,
+#secondary .widget.widget_rss .rss-date,
+#secondary .widget.widget_rss cite,
+#footer .widget.widget_rss a.rsswidget,
+#footer .widget.widget_rss .rss-date,
+#footer .widget.widget_rss cite {
+  display: block;
+  font-weight: bold;
+}
+
+#secondary .widget,
+#footer .widget {
+  margin-bottom: 25px;
+}
+
+#secondary .widget ul,
+#footer .widget ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#secondary .widget ul li,
+#footer .widget ul li {
+  margin: 0;
+  padding: 10px 18px;
+}
+
+#secondary .widget ul li:last-child,
+#footer .widget ul li:last-child {
+  border-bottom: none;
+}
+
+#secondary .widget .widget-title,
+#footer .widget .widget-title {
+  display: inline-block;
+  margin: 0;
+  padding: 13px 20px 10px;
+}
+
+#secondary .widget .widget-title + .search-form,
+#footer .widget .widget-title + .search-form {
+  padding-top: 10px;
+}
+
+#secondary .widget .search-submit.btn,
+#footer .widget .search-submit.btn {
+  border-bottom-width: 1px;
+}
+
+#secondary select,
+#footer select {
+  width: 100%;
+}
+
+/* =============================================================================
+   Footer only
+   ========================================================================== */
+
+#footer .widget .widget-title + .separator {
+  margin: 0;
+}
+
+#footer .container {
+  padding: 30px;
+}
+
+#credits {
+  padding-left: 0;
+}
+
+#credits p {
+  margin-bottom: 0;
+}
+
+#social-menu {
+  padding-right: 0;
+  text-align: right;
+}
+
+#social-menu ul {
+  display: inline;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#social-menu ul li {
+  display: inline;
+}
+
+/* =============================================================================
+   Bootstrap submenus (styles deprecated in Bootstrap 3.x)
+   ========================================================================== */
+
+#top-navigation .dropdown-submenu {
+  position: relative;
+}
+
+#top-navigation .dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0;
+}
+
+#top-navigation .dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+#top-navigation .dropdown-submenu .pull-left {
+  float: none;
+}
+
+#top-navigation .dropdown-submenu .pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 0;
+}
+
+/* =============================================================================
+   Buttons
+   ========================================================================== */
+
+.more-link {
+  display: block;
+  margin: 25px 0 0;
+}
+
+.btn {
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 3px;
+}
+
+.btn:hover,
+.btn:active,
+.btn:link,
+.btn:visited,
+.btn:focus,
+.btn:active:focus {
+  outline: none;
+}
+
+/* =============================================================================
+   Paging navigation
+   ========================================================================== */
+
+.infinity-success .paging-navigation {
+  display: none;
+}
+
+.nav-links .pull-left a.btn {
+  padding: 10px 15px 5px 10px;
+}
+
+.nav-links .pull-right a.btn {
+  padding: 10px 10px 5px 15px;
+}
+
+/* =============================================================================
+   Support for media embeds
+   ========================================================================== */
+
+iframe[src*="youtube.com"] {
+  width: 100%;
+}
+
+embed[src*="v.wordpress.com"] {
+  width: 100%;
+}
+
+.twitter-tweet.twitter-tweet-rendered {
+  width: 100%;
+}
+
+.video-player {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* =============================================================================
+   Support for Facebook likebox
+   ========================================================================== */
+
+.widget_facebook_likebox iframe {
+  max-width: 100%;
+}
+
+#secondary .widget_facebook_likebox.widget .widget-title + .separator {
+  margin-bottom: 15px;
+}
+
+/* =============================================================================
+   Support for Gravatar profile (via Jetpack)
+   ========================================================================== */
+
+#secondary .widget-grofile.widget .widget-title + .separator {
+  margin-bottom: 20px;
+}
+
+.widget-grofile .grofile-meta {
+  margin-top: 15px;
+}
+
+#secondary .widget-grofile.widget h4:not(.widget-title) {
+  margin: 5px 0;
+  padding: 0;
+  text-transform: none;
+}
+
+#footer .widget-grofile.widget h4:not(.widget-title) {
+  margin: 5px 0;
+  padding: 0;
+  text-transform: none;
+}
+
+/* =============================================================================
+   Support for RSS feeds (via Jetpack)
+   ========================================================================== */
+
+#secondary .widget_rss_links.widget .widget-title + .separator {
+  margin-bottom: 15px;
+}
+
+#footer .widget_rss_links.widget .widget-title + .separator {
+  margin-bottom: 15px;
+}
+
+.widget_rss_links img {
+  max-width: 24px;
+}
+
+/* =============================================================================
+   Support for Twitter Timeline (via Jetpack)
+   ========================================================================== */
+
+#secondary .widget_twitter_timeline.widget .widget-title + .separator {
+  margin-bottom: 15px;
+}
+
+/* =============================================================================
+   Support for Readmill (via Jetpack)
+   ========================================================================== */
+
+#secondary .widget_jetpack_readmill_widget.widget .widget-title + .separator {
+  margin-bottom: 15px;
+}
+
+/* =============================================================================
+   Extra responsive styles
+   ========================================================================== */
+
+@media screen and (max-width: 782px) {
+  #wpadminbar {
+    position: fixed;
+  }
+
+  body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
+    margin-top: 46px;
+  }
+
+  #credits,
+  #social-menu {
+    padding: 0;
+    text-align: center;
+  }
+}

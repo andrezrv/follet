@@ -1,0 +1,126 @@
+/**
+ * This stylesheet will manage all primary color-related styles.
+ *
+ * @package Follet_Theme
+ * @since   1.0
+ */
+
+// Set primary color.
+$primary: #428BCA;
+
+/* =============================================================================
+   General
+   ========================================================================== */
+
+a {
+	color: $primary;
+}
+
+/* Navigation pills
+   ========================================================================== */
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+	background-color: $primary;
+}
+
+/* Buttons
+   ========================================================================== */
+
+.btn {
+	&.btn-primary {
+		background-color: $primary;
+	}
+}
+
+/* Top navigation
+   ========================================================================== */
+
+.dropdown-menu {
+	> li {
+		> a {
+			&:hover,
+			&:focus {
+				background-color: $primary;
+			}
+		}
+	}
+}
+
+/* =============================================================================
+   Header
+   ========================================================================== */
+
+#main-header {
+	background-color: $primary;
+}
+
+/* =============================================================================
+   Content
+   ========================================================================== */
+
+/* Articles
+   ========================================================================== */
+
+#main article {
+	border-bottom: 2px solid $primary;
+}
+
+.author-info {
+	border-bottom: 2px solid $primary;
+}
+
+/* Sidebar
+   ========================================================================== */
+
+#secondary {
+	.widget {
+		.widget-title {
+			background-color: $primary;
+			+ .separator {
+				border-top: 2px solid $primary;
+			}
+		}
+	}
+}
+
+/* =============================================================================
+   Comments
+   ========================================================================== */
+
+#comments {
+	.reply {
+		a {
+			border-bottom: 1px dotted $primary;
+		}
+	}
+}
+
+.comment-metadata {
+	a {
+		border-bottom: 1px dotted $primary;
+	}
+}
+
+/* =============================================================================
+   Footer
+   ========================================================================== */
+
+#footer {
+	.credits {
+		a:hover {
+			color: $primary;
+		}
+	}
+}
+
+#social-menu {
+	ul {
+		li {
+			a:hover {
+				color: $primary;
+			}
+		}
+	}
+}

@@ -142,6 +142,13 @@ function follet_customize_top_navigation( $wp_customize ) {
 }
 add_action( 'customize_register', 'follet_customize_top_navigation' );
 
+/**
+ * Allow to upload a custom logo to replace the header text.
+ *
+ * @param  WP_Customize_Manager $wp_customize Theme Customizer object.
+ * @return void
+ * @since  1.0
+ */
 function follet_customize_header_logo( $wp_customize ) {
 
 	if ( follet_get_current( 'header_logo_customize' ) ) {
@@ -209,11 +216,25 @@ function follet_customize_header_logo( $wp_customize ) {
 }
 add_action( 'customize_register', 'follet_customize_header_logo' );
 
+/**
+ * Relocate header image section.
+ *
+ * @param  WP_Customize_Manager $wp_customize Theme Customizer object.
+ * @return void
+ * @since  1.0
+ */
 function follet_customize_title_tagline( $wp_customize ) {
 	$wp_customize->get_section( 'header_image' )->priority = $wp_customize->get_section( 'title_tagline' )->priority + 2;
 }
 add_action( 'customize_register', 'follet_customize_title_tagline' );
 
+/**
+ * Manage primary, secondary, sidebar background and header background colors.
+ *
+ * @param  WP_Customize_Manager $wp_customize Theme Customizer object.
+ * @return void
+ * @since  1.0
+ */
 function follet_customize_colors( $wp_customize ) {
 
 	$wp_customize->get_section( 'colors' )->priority = 60;

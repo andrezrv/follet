@@ -13,10 +13,11 @@
 
 			<div class="site-branding <?php follet_container_class( 'site-branding' ); ?>">
 
-				<?php if (   follet_get_current( 'header_logo_show' )
+				<?php if (   follet_get_current( 'header_logo_customize' )
+				         and follet_get_current( 'header_logo_show' )
 				         and $header_logo_img = follet_get_current( 'header_logo_img' ) ) : ?>
 
-					<h1 class="site-title">
+					<h1 class="site-title site-logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 							<img src="<?php echo $header_logo_img; ?>" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>">
 						</a>

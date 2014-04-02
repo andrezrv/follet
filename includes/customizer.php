@@ -144,112 +144,73 @@ add_action( 'customize_register', 'follet_customize_top_navigation' );
 
 function follet_customize_header_logo( $wp_customize ) {
 
-	$wp_customize->add_section( 'header_logo' , array(
-		'title'    => __( 'Header Logo', 'follet_theme' ),
-		'priority' => $wp_customize->get_section( 'title_tagline' )->priority + 1,
-	) );
+	if ( follet_get_current( 'header_logo_customize' ) ) {
 
-	$wp_customize->add_setting( 'header_logo_tip' , array(
-		'default'   => '<p>' . apply_filters( 'follet_header_logo_tip', sprintf( __( 'Here you can upload your own logo and use it instead of the Site Title & Tagline values.', 'follet_theme' ), '<strong>', '</strong>' ) ) . '</p>',
-	) );
+		$wp_customize->add_section( 'header_logo' , array(
+			'title'    => __( 'Header Logo', 'follet_theme' ),
+			'priority' => $wp_customize->get_section( 'title_tagline' )->priority + 1,
+		) );
 
-	$wp_customize->add_control(
-		new Follet_Plain_Text_Control(
-			$wp_customize,
-			'header_logo_tip',
-			array(
-				'section'  => 'header_logo',
-				'settings' => 'header_logo_tip',
-				'priority' => 10,
+		$wp_customize->add_setting( 'header_logo_tip' , array(
+			'default'   => '<p>' . apply_filters( 'follet_header_logo_tip', sprintf( __( 'Here you can upload your own logo and use it instead of the Site Title & Tagline values.', 'follet_theme' ), '<strong>', '</strong>' ) ) . '</p>',
+		) );
+
+		$wp_customize->add_control(
+			new Follet_Plain_Text_Control(
+				$wp_customize,
+				'header_logo_tip',
+				array(
+					'section'  => 'header_logo',
+					'settings' => 'header_logo_tip',
+					'priority' => 10,
+				)
 			)
-		)
-	);
+		);
 
-	$wp_customize->add_setting( 'header_logo_show' , array(
-		'default'   => follet_get_default( 'header_logo_show' ),
-		'transport' => 'refresh',
-	) );
+		$wp_customize->add_setting( 'header_logo_show' , array(
+			'default'   => follet_get_default( 'header_logo_show' ),
+			'transport' => 'refresh',
+		) );
 
-	$wp_customize->add_control(
-		new WP_Customize_Control(
-			$wp_customize,
-			'header_logo_show',
-			array(
-				'label'    => __( 'Show instead of Site Title & Tagline', 'follet_theme' ),
-				'section'  => 'header_logo',
-				'settings' => 'header_logo_show',
-				'priority' => 30,
-				'type'     => 'checkbox',
+		$wp_customize->add_control(
+			new WP_Customize_Control(
+				$wp_customize,
+				'header_logo_show',
+				array(
+					'label'    => __( 'Show instead of Site Title & Tagline', 'follet_theme' ),
+					'section'  => 'header_logo',
+					'settings' => 'header_logo_show',
+					'priority' => 30,
+					'type'     => 'checkbox',
+				)
 			)
-		)
-	);
+		);
 
-	$wp_customize->add_setting( 'header_logo_img' , array(
-		'default'   => follet_get_default( 'header_logo_img' ),
-		'transport' => 'refresh',
-	) );
+		$wp_customize->add_setting( 'header_logo_img' , array(
+			'default'   => follet_get_default( 'header_logo_img' ),
+			'transport' => 'refresh',
+		) );
 
-	$wp_customize->add_control(
-		new WP_Customize_Image_Control(
-			$wp_customize,
-			'header_logo_img',
-			array(
-				'label'      => __( 'Header Logo', 'follet_theme' ),
-				'section'    => 'header_logo',
-				'settings'   => 'header_logo_img',
-				'priority'   => 20,
+		$wp_customize->add_control(
+			new WP_Customize_Image_Control(
+				$wp_customize,
+				'header_logo_img',
+				array(
+					'label'      => __( 'Header Logo', 'follet_theme' ),
+					'section'    => 'header_logo',
+					'settings'   => 'header_logo_img',
+					'priority'   => 20,
+				)
 			)
-		)
-	);
+		);
+
+	}
 
 }
 add_action( 'customize_register', 'follet_customize_header_logo' );
 
 function follet_customize_title_tagline( $wp_customize ) {
-
 	$wp_customize->get_section( 'header_image' )->priority = $wp_customize->get_section( 'title_tagline' )->priority + 2;
-	$wp_customize->remove_control( 'display_header_text' );
-	$wp_customize->get_control( 'blogname' )->priority = 10;
-	$wp_customize->get_control( 'blogdescription' )->priority = 30;
-
-	$wp_customize->add_setting( 'header_show_title' , array(
-		'default'   => follet_get_default( 'header_show_title' ),
-		'transport' => 'refresh',
-	) );
-
-	$wp_customize->add_control(
-		new WP_Customize_Control(
-			$wp_customize,
-			'header_show_title',
-			array(
-				'label'    => __( 'Display Site Title', 'follet_theme' ),
-				'section'  => 'title_tagline',
-				'settings' => 'header_show_title',
-				'priority' => 20,
-				'type'     => 'checkbox',
-			)
-		)
-	);
-
-	$wp_customize->add_setting( 'header_show_tagline' , array(
-		'default'   => follet_get_default( 'header_show_tagline' ),
-		'transport' => 'refresh',
-	) );
-
-	$wp_customize->add_control(
-		new WP_Customize_Control(
-			$wp_customize,
-			'header_show_tagline',
-			array(
-				'label'    => __( 'Display Tagline', 'follet_theme' ),
-				'section'  => 'title_tagline',
-				'settings' => 'header_show_tagline',
-				'priority' => 40,
-				'type'     => 'checkbox',
-			)
-		)
-	);
-
 }
 add_action( 'customize_register', 'follet_customize_title_tagline' );
 

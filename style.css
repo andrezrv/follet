@@ -292,6 +292,7 @@ body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
   background-position: 0;
   -webkit-background-size: cover;
   background-size: cover;
+  min-height: 160px;
 }
 
 .site-branding {

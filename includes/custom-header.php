@@ -27,6 +27,7 @@ function follet_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'follet_custom_header_args', array(
 		'default-image'          => get_template_directory_uri() . '/images/blue-diamond-pattern.png',
 		'default-text-color'     => 'FFFFFF',
+		'header-text'            => true,
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
@@ -86,12 +87,19 @@ function follet_header_style() {
 	?>
 		.site-title,
 		.site-description {
-			position: absolute;
 			clip: rect(1px, 1px, 1px, 1px);
+			display: none;
 		}
+		<?php if (   follet_get_current( 'header_logo_customize' )
+			     and follet_get_current( 'header_logo_show' )
+			     and follet_get_current( 'header_logo_img' ) ) : ?>
+			.site-title.site-logo {
+				display: block;
+			}
+		<?php endif; ?>
 	<?php else : // If the user has set a custom color for the text use that. ?>
-		.site-branding h1 a,
-		.site-description {
+		.site-branding .site-title a,
+		.site-branding .site-description {
 			color: #<?php echo $header_text_color; ?>;
 		}
 	<?php endif; ?>

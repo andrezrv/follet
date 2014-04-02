@@ -105,7 +105,10 @@ body {
 .site-branding {
   overflow: auto;
 }
-.site-branding h1 a {
+.site-branding .site-title a {
+  color: white;
+}
+.site-branding .site-description {
   color: white;
 }
 

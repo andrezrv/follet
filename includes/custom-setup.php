@@ -30,6 +30,7 @@ function follet_register_options( $options ) {
 		'top_navigation_searchform_show'   => false,
 		'top_navigation_style'             => 'navbar-default',
 		'social_navigation_show'           => true,
+		'header_logo_customize'            => false,
 		'header_logo_show'                 => false,
 		'header_logo_img'                  => '',
 		'header_show_title'                => true,

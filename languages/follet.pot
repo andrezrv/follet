@@ -2,11 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Follet Theme\n"
 "Report-Msgid-Bugs-To: http://github.com/andrezrv/follet\n"
-"POT-Creation-Date: 2014-03-30 12:46-0300\n"
-"PO-Revision-Date: 2014-03-30 12:47-0300\n"
+"POT-Creation-Date: 2014-03-30 12:51-0300\n"
+"PO-Revision-Date: 2014-03-30 12:51-0300\n"
 "Last-Translator: Andrés Villarreal <andrezrv@gmail.com>\n"
 "Language-Team: Follet <andrezrv@gmail.com>\n"
-"Language: es\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,123 +15,123 @@ msgstr ""
 
 #: 404.php:18
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "Página no encontrada."
+msgstr ""
 
 #: 404.php:23
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the links "
 "below or a search?"
 msgstr ""
-"Parece que no se encontró nada en esta ubicación. Quizás una búsqueda o "
-"alguno de los siguientes enlaces te ayude."
 
 #: 404.php:32
 msgid "Most Used Categories"
-msgstr "Categorías Más Usadas"
+msgstr ""
 
 #: 404.php:49
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
-msgstr "Intenta buscar en el archivo mensual. %1$s"
+msgstr ""
 
 #: archive.php:35
 #, php-format
 msgid "Author: %s"
-msgstr "Autor: %s"
+msgstr ""
 
 #: archive.php:38
 #, php-format
 msgid "Day: %s"
-msgstr "Día: %s"
+msgstr ""
 
 #: archive.php:41
 #, php-format
 msgid "Month: %s"
-msgstr "Mes: %s"
+msgstr ""
 
 #: archive.php:41
 msgid "F Y"
-msgstr "F Y"
+msgstr ""
 
 #: archive.php:44
 #, php-format
 msgid "Year: %s"
-msgstr "Año: %s"
+msgstr ""
 
 #: archive.php:44
 msgid "Y"
-msgstr "Y"
+msgstr ""
 
 #: archive.php:47
 msgid "Asides"
-msgstr "Apartados"
+msgstr ""
 
 #: archive.php:50
 msgid "Galleries"
-msgstr "Galerías"
+msgstr ""
 
 #: archive.php:53
 msgid "Images"
-msgstr "Imágenes"
+msgstr ""
 
 #: archive.php:56
 msgid "Videos"
-msgstr "Videos"
+msgstr ""
 
 #: archive.php:59
 msgid "Quotes"
-msgstr "Citas"
+msgstr ""
 
 #: archive.php:62
 msgid "Links"
-msgstr "Enlaces"
+msgstr ""
 
 #: archive.php:65
 msgid "Statuses"
-msgstr "Estados"
+msgstr ""
 
 #: archive.php:68
 msgid "Audios"
-msgstr "Audios"
+msgstr ""
 
 #: archive.php:71
 msgid "Chats"
-msgstr "Chats"
+msgstr ""
 
 #: archive.php:74
 msgid "Archives"
-msgstr "Archivos"
+msgstr ""
 
 #: comments.php:33
 #: comments.php:47
 msgid "Comment navigation"
-msgstr "Navegación por comentarios"
+msgstr ""
 
 #: comments.php:34
 #: comments.php:48
 msgid "&larr; Older Comments"
-msgstr "&larr; Comentarios Anteriores"
+msgstr ""
 
 #: comments.php:35
 #: comments.php:49
 msgid "Newer Comments &rarr;"
-msgstr "Comentarios Recientes &rarr;"
+msgstr ""
 
 #: comments.php:57
 msgid "Comments are closed."
-msgstr "Los comentarios estás cerrados"
+msgstr ""
 
 #: comments.php:64
-#: inc/FOLLET~1/FOLLET~3.PHP:219
 msgid "Name:"
-msgstr "Nombre:"
+msgstr ""
 
 #: comments.php:65
-#: inc/FOLLET~1/FOLLET~3.PHP:220
 msgid "Email Address:"
-msgstr "Email:"
+msgstr ""
 
 #: comments.php:66
-#: inc/FOLLET~1/FOLLET~3.PHP:221
 msgid "Your Website:"
-msgstr "Sitio Web:"
+msgstr ""
+
+#: search.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""

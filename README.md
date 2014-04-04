@@ -48,8 +48,8 @@ Named after [Ken Follet](http://en.wikipedia.org/wiki/Ken_Follett), author of [T
 
 ## Installation
 
-1. `git clone git@github.com:andrezrv/follet.git` into `/wp-content/themes/`, or download and unzip `follet.zip` and copy the `follet` folder to your `/wp-content/themes/` directory.
-2. Activate the theme through the *Appereance > Themes* menu in WordPress.
+1. `git clone --recursive git@github.com:andrezrv/follet.git` into `/wp-content/themes/`, or download and unzip `follet.zip` and copy the `follet` folder to your `/wp-content/themes/` directory.
+2. Activate the theme through the *Appearance > Themes* menu in WordPress.
 
 ## Contributing
 

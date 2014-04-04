@@ -701,7 +701,7 @@ ol.comment-list ol.children {
   position: relative;
 }
 
-#top-navigation .dropdown-submenu > .dropdown-menu {
+#top-navigation .dropdown-submenu .dropdown-menu {
   top: 0;
   left: 100%;
   margin-top: -6px;

@@ -60,9 +60,9 @@ function follet_header_style() {
 
 	// If no custom options for text are set, let's bail
 	// get_header_textcolor() options: HEADER_TEXTCOLOR is default, hide text (returns 'blank') or any hex value
-	if ( HEADER_TEXTCOLOR == $header_text_color ) {
+	/*if ( HEADER_TEXTCOLOR == $header_text_color ) {
 		return;
-	}
+	}*/
 
 	// If we get this far, we have custom styles. Let's do this.
 	?>
@@ -87,22 +87,22 @@ function follet_header_style() {
 	?>
 		.site-title,
 		.site-description {
-			clip: rect(1px, 1px, 1px, 1px);
 			display: none;
 		}
-		<?php if (   follet_get_current( 'header_logo_customize' )
-			     and follet_get_current( 'header_logo_show' )
-			     and follet_get_current( 'header_logo_img' ) ) : ?>
-			.site-title.site-logo {
-				display: block;
+			<?php if (   follet_get_current( 'header_logo_customize' )
+				     and follet_get_current( 'header_logo_show' )
+				     and follet_get_current( 'header_logo_img' ) ) : ?>
+				.site-title.site-logo {
+					display: block;
+				}
+			<?php endif; ?>
+			clip: rect(1px, 1px, 1px, 1px);
+		<?php elseif ( HEADER_TEXTCOLOR != $header_text_color ) : // If the user has set a custom color for the text use that. ?>
+			.site-branding .site-title a,
+			.site-branding .site-description {
+				color: #<?php echo $header_text_color; ?>;
 			}
 		<?php endif; ?>
-	<?php else : // If the user has set a custom color for the text use that. ?>
-		.site-branding .site-title a,
-		.site-branding .site-description {
-			color: #<?php echo $header_text_color; ?>;
-		}
-	<?php endif; ?>
 	</style>
 	<?php
 }

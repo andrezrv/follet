@@ -175,6 +175,7 @@ blockquote {
 
 .page-links .links-container .btn {
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: none;
 }
 .page-links .pagination-text:hover, .page-links .pagination-text:focus, .page-links .pagination-text:active, .page-links .pagination-text:link, .page-links .pagination-text:visited, .page-links .pagination-text:active:focus {
   box-shadow: none;

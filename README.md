@@ -22,6 +22,7 @@ Named after [Ken Follet](http://en.wikipedia.org/wiki/Ken_Follett), author of [T
 * Full support for [editor styles](https://codex.wordpress.org/Editor_Style), so you'll never have to leave the editor to see what your posts will look like. What you see while writing will be the same you'll see after you publish your content.
 * Breadcrumbs, so your visitors can always find their way back home :)
 * Threaded comments up to 10 levels, the maximum available by default.
+* Responsive YouTube and Vimeo videos.
 * Support for paginated comments.
 * Support for paginated posts.
 * Support for all post formats.

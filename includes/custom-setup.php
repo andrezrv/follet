@@ -53,6 +53,7 @@ function follet_register_options( $options ) {
 		'post_author_info_show'            => false,
 		'breadcrumbs_show'                 => true,
 		'contact_methods_show'             => true,
+		'responsive_videos'                => true,
 		'contact_methods'                  => array(
 			'feed'       => 'RSS',
 			'wordpress'  => 'WordPress',
@@ -296,6 +297,16 @@ function follet_enqueue_scripts() {
 		true
 	);
 
+	if ( follet_get_current( 'responsive_videos' ) ) {
+		wp_enqueue_script(
+			'follet-resize-videos',
+			follet_template_directory_uri(). '/js/min/resize-videos.min.js',
+			array( 'jquery' ),
+			follet()->theme_version,
+			true
+		);
+	}
+
 }
 endif;
 add_action( 'wp_enqueue_scripts', 'follet_enqueue_scripts' );
@@ -424,6 +435,15 @@ function follet_bootstrap_carousel_control( $control ) {
 }
 endif;
 add_filter( 'agnosia_bootstrap_carousel_control', 'follet_bootstrap_carousel_control' );
+
+function follet_content_width() {
+	/*if (   ! is_active_sidebar( 'sidebar-primary' )
+		|| ! follet_get_current( 'sidebar_primary_show' )
+	) {*/
+		$GLOBALS['content_width'] = 1110;
+	/*}*/
+}
+add_action( 'wp_head', 'follet_content_width' );
 
 /**
  * Add a hook for custom actions before loading the next file.

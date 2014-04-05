@@ -387,5 +387,10 @@ b.icon.icon-arrow-down:before {
 				content: "\f304";
 			}
 		}
+		&.jetpack_subscription_widget {
+			.widget-title:before {
+				content: "\f466";
+			}
+		}
 	}
 }

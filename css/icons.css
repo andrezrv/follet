@@ -317,3 +317,6 @@ body.rtl #main article.post header:before, body.rtl #tinymce.wp-editor.post head
 #secondary .widget.widget_facebook_likebox .widget-title:before, #footer .widget.widget_facebook_likebox .widget-title:before {
   content: "\f304";
 }
+#secondary .widget.jetpack_subscription_widget .widget-title:before, #footer .widget.jetpack_subscription_widget .widget-title:before {
+  content: "\f466";
+}

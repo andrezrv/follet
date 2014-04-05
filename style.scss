@@ -607,6 +607,7 @@ ol.comment-list {
 		}
 		.widget-title {
 			display: inline-block;
+			display: inline-flex;
 			margin: 0;
 			padding: 13px 20px 10px;
 			+ .search-form {
@@ -826,8 +827,37 @@ embed[src*="v.wordpress.com"] {
 /* =============================================================================
    Support for Sharing (via Jetpack)
    ========================================================================== */
-.entry-content div.sharedaddy .sd-content {
-	float: left;
+.entry-content, .entry-summary {
+	div.sharedaddy {
+		margin: 25px 0 0;
+		.sd-content {
+			float: left;
+		}
+		+ .sharedaddy {
+			margin: 0;
+			.sd-block, &.sd-block {
+				padding: 0;
+			}
+		}
+		.sd-block, &.sd-block {
+			padding: 10px 0 0;
+		}
+	}
+}
+
+/* =============================================================================
+   Support for Suscription (via Jetpack)
+   ========================================================================== */
+.widget.jetpack_subscription_widget {
+	form {
+		margin-top: 10px;
+	}
+	.widget-title {
+		label {
+			margin: 0;
+			font-weight: normal;
+		}
+	}
 }
 
 /* =============================================================================

@@ -275,3 +275,13 @@ blockquote {
 #footer .widget-grofile.widget h4:not(.widget-title) a {
   color: white;
 }
+
+/* =============================================================================
+   Support for Sharing (via Jetpack)
+   ========================================================================== */
+.entry-content div.sharedaddy {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.entry-content div.sharedaddy .sd-sharing, .entry-content div.sharedaddy + .sharedaddy {
+  border: none;
+}

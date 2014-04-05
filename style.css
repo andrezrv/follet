@@ -638,6 +638,9 @@ ol.comment-list ol.children {
 #secondary .widget .widget-title,
 #footer .widget .widget-title {
   display: inline-block;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   margin: 0;
   padding: 13px 20px 10px;
 }
@@ -856,8 +859,46 @@ embed[src*="v.wordpress.com"] {
    Support for Sharing (via Jetpack)
    ========================================================================== */
 
-.entry-content div.sharedaddy .sd-content {
+.entry-content div.sharedaddy,
+.entry-summary div.sharedaddy {
+  margin: 25px 0 0;
+}
+
+.entry-content div.sharedaddy .sd-content,
+.entry-summary div.sharedaddy .sd-content {
   float: left;
+}
+
+.entry-content div.sharedaddy + .sharedaddy,
+.entry-summary div.sharedaddy + .sharedaddy {
+  margin: 0;
+}
+
+.entry-content div.sharedaddy + .sharedaddy .sd-block,
+.entry-content div.sharedaddy + .sharedaddy.sd-block,
+.entry-summary div.sharedaddy + .sharedaddy .sd-block,
+.entry-summary div.sharedaddy + .sharedaddy.sd-block {
+  padding: 0;
+}
+
+.entry-content div.sharedaddy .sd-block,
+.entry-content div.sharedaddy.sd-block,
+.entry-summary div.sharedaddy .sd-block,
+.entry-summary div.sharedaddy.sd-block {
+  padding: 10px 0 0;
+}
+
+/* =============================================================================
+   Support for Suscription (via Jetpack)
+   ========================================================================== */
+
+.widget.jetpack_subscription_widget form {
+  margin-top: 10px;
+}
+
+.widget.jetpack_subscription_widget .widget-title label {
+  margin: 0;
+  font-weight: normal;
 }
 
 /* =============================================================================

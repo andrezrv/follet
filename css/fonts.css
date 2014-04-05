@@ -145,3 +145,11 @@ body {
   font-family: 'Neuton', serif;
   font-size: 26px;
 }
+
+/* =============================================================================
+   Support for Suscription (via Jetpack)
+   ========================================================================== */
+.widget.jetpack_subscription_widget form {
+  font-size: 13px;
+  line-height: 24px;
+}

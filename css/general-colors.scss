@@ -386,3 +386,13 @@ blockquote {
 		}
 	}
 }
+
+/* =============================================================================
+   Support for Sharing (via Jetpack)
+   ========================================================================== */
+.entry-content div.sharedaddy {
+	border-top: 1px solid $light-opacity;
+	.sd-sharing, + .sharedaddy {
+		border: none;
+	}
+}

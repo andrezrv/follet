@@ -763,6 +763,10 @@ ol.comment-list ol.children {
    Paging navigation
    ========================================================================== */
 
+.paging-navigation {
+  overflow: hidden;
+}
+
 .infinity-success .paging-navigation {
   display: none;
 }

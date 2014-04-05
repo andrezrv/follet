@@ -727,6 +727,7 @@ ol.comment-list {
    Paging navigation
    ========================================================================== */
 .paging-navigation {
+	overflow: hidden;
 	.infinity-success & {
 		display: none;
 	}

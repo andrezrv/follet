@@ -29,6 +29,7 @@ Named after [Ken Follet](http://en.wikipedia.org/wiki/Ken_Follett), author of [T
 * Support for featured images.
 * Support for sticky posts.
 * Support for all [Jetpack](http://jetpack.me/) modules, specially [Infinite Scroll](http://jetpack.me/support/infinite-scroll/), [Contact Form](http://jetpack.me/support/contact-form/), [Extra Sidebar Widgets](http://jetpack.me/support/extra-sidebar-widgets/), [Sharing](http://jetpack.me/support/sharing/), [Carousel](http://jetpack.me/support/carousel/) and [Tiled Galleries](http://jetpack.me/support/tiled-galleries/).
+* Languages included: English (en_EN), Spanish (es_ES).
 
 ## Even More Features for Developers
 

@@ -9,12 +9,12 @@
 // Colors by hex code.
 $dark-grey: #777777;
 $medium-grey: #DDDDDD;
+$light-medium-grey: #DEDEDE;
 $light-grey: #EDEDED;
 $white: #FFFFFF;
 $dark: #333333;
 $darker: #222222;
 $black: #000000;
-$light-opacity: rgba(0, 0, 0, 0.1);
 $medium-opacity: rgba(0, 0, 0, 0.5);
 
 // Colors by function.
@@ -34,7 +34,7 @@ body {
 
 .breadcrumb {
 	background: none;
-	border-bottom: 1px solid $light-opacity;
+	border-bottom: 1px solid $light-medium-grey;
 	> li + li:before,
 	.active {
 		color: $text-primary-contrast;
@@ -42,7 +42,7 @@ body {
 }
 
 .page-header {
-	border-bottom: 1px solid $light-opacity;
+	border-bottom: 1px solid $light-medium-grey;
 }
 
 /* =============================================================================
@@ -51,7 +51,7 @@ body {
 
 #top-navigation-wrapper {
 	&.navbar-fixed-top {
-		box-shadow: 0px 0px 10px $light-opacity;
+		box-shadow: 0px 0px 10px $light-medium-grey;
 	}
 }
 
@@ -116,7 +116,7 @@ body {
 
 #top-navigation-searchform-copy {
 	.navbar-fixed-top & {
-		box-shadow: 0px 10px 10px 0px $light-opacity;
+		box-shadow: 0px 10px 10px 0px $light-medium-grey;
 	}
 }
 
@@ -179,7 +179,7 @@ blockquote {
 
 .entry-thumbnail {
 	background-color: $white;
-	border: 1px solid $light-opacity;
+	border: 1px solid $light-medium-grey;
 	opacity: 0.9;
 	transition: opacity 0.5s ease;
 	&:hover {
@@ -189,6 +189,7 @@ blockquote {
 }
 
 .carousel-caption {
+	background-color: #333;
 	background-color: $medium-opacity;
 	a {
 		text-shadow: none;
@@ -202,7 +203,7 @@ blockquote {
 #primary {
 	background-color: $white;
 	&:not(.col-sm-12) {
-		border-right: 1px solid $light-opacity;
+		border-right: 1px solid $light-medium-grey;
 	}
 }
 
@@ -225,13 +226,13 @@ blockquote {
 }
 
 .entry-summary {
-	border-bottom: 1px solid $light-opacity;
-	border-top: 1px solid $light-opacity;
+	border-bottom: 1px solid $light-medium-grey;
+	border-top: 1px solid $light-medium-grey;
 }
 
 .entry-content {
-	border-bottom: 1px solid $light-opacity;
-	border-top: 1px solid $light-opacity;
+	border-bottom: 1px solid $light-medium-grey;
+	border-top: 1px solid $light-medium-grey;
 }
 
 .entry-meta {
@@ -243,7 +244,7 @@ blockquote {
 .page-links {
 	.links-container {
 		.btn {
-			border: 1px solid $light-opacity;
+			border: 1px solid $light-medium-grey;
 			border-top: none;
 		}
 	}
@@ -266,6 +267,7 @@ blockquote {
 .gallery-item {
 	.gallery-caption {
 		color: $white;
+		background-color: #333;
 		background-color: $medium-opacity;
 	}
 }
@@ -277,7 +279,7 @@ blockquote {
 }
 
 .comment-content {
-	border: 1px solid $light-opacity;
+	border: 1px solid $light-medium-grey;
 }
 
 /* Sidebar
@@ -293,7 +295,7 @@ blockquote {
 		}
 		ul {
 			li {
-				border-bottom: 1px solid $light-opacity;
+				border-bottom: 1px solid $light-medium-grey;
 			}
 		}
 	}
@@ -392,7 +394,7 @@ blockquote {
    Support for Sharing (via Jetpack)
    ========================================================================== */
 .entry-content div.sharedaddy {
-	border-top: 1px solid $light-opacity;
+	border-top: 1px solid $light-medium-grey;
 	.sd-sharing, + .sharedaddy {
 		border: none;
 	}

@@ -15,7 +15,7 @@ body {
 
 .breadcrumb {
   background: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #dedede;
 }
 .breadcrumb > li + li:before,
 .breadcrumb .active {
@@ -23,14 +23,14 @@ body {
 }
 
 .page-header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #dedede;
 }
 
 /* =============================================================================
    Top navigation
    ========================================================================== */
 #top-navigation-wrapper.navbar-fixed-top {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px #dedede;
 }
 
 .navbar-default {
@@ -76,7 +76,7 @@ body {
 }
 
 .navbar-fixed-top #top-navigation-searchform-copy {
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px 0px #dedede;
 }
 
 #top-navigation .dropdown-submenu a:hover {
@@ -125,7 +125,7 @@ blockquote {
 
 .entry-thumbnail {
   background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #dedede;
   opacity: 0.9;
   transition: opacity 0.5s ease;
 }
@@ -135,6 +135,7 @@ blockquote {
 }
 
 .carousel-caption {
+  background-color: #333;
   background-color: rgba(0, 0, 0, 0.5);
 }
 .carousel-caption a {
@@ -148,7 +149,7 @@ blockquote {
   background-color: white;
 }
 #primary:not(.col-sm-12) {
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #dedede;
 }
 
 #main article.post header:before, #tinymce.wp-editor.post header:before {
@@ -160,13 +161,13 @@ blockquote {
 }
 
 .entry-summary {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #dedede;
+  border-top: 1px solid #dedede;
 }
 
 .entry-content {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #dedede;
+  border-top: 1px solid #dedede;
 }
 
 .entry-meta section {
@@ -174,7 +175,7 @@ blockquote {
 }
 
 .page-links .links-container .btn {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #dedede;
   border-top: none;
 }
 .page-links .pagination-text:hover, .page-links .pagination-text:focus, .page-links .pagination-text:active, .page-links .pagination-text:link, .page-links .pagination-text:visited, .page-links .pagination-text:active:focus {
@@ -187,6 +188,7 @@ blockquote {
 
 .gallery-item .gallery-caption {
   color: white;
+  background-color: #333;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -195,7 +197,7 @@ blockquote {
 }
 
 .comment-content {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #dedede;
 }
 
 /* Sidebar
@@ -207,7 +209,7 @@ blockquote {
   margin: 0;
 }
 #secondary .widget ul li {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #dedede;
 }
 
 /* =============================================================================
@@ -281,7 +283,7 @@ blockquote {
    Support for Sharing (via Jetpack)
    ========================================================================== */
 .entry-content div.sharedaddy {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #dedede;
 }
 .entry-content div.sharedaddy .sd-sharing, .entry-content div.sharedaddy + .sharedaddy {
   border: none;

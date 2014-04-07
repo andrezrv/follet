@@ -565,6 +565,11 @@ ol.comment-list {
 #secondary,
 #footer {
 	.widget {
+		&.widget_text {
+			.widget-title + .separator {
+				margin-bottom: 10px;
+			}
+		}
 		&.widget_archive {
 			select {
 				margin-top: 20px;

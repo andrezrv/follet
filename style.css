@@ -1,6 +1,4 @@
 @charset "UTF-8";
-
-
 /**
  * Follet
  *
@@ -33,11 +31,9 @@
  * Domain Path: /languages/
  * Tags: blue, red, white, custom-colors, custom-background, custom-header, custom-menu, editor-style, featured-images, full-width-template, right-sidebar, light, photoblogging, responsive-layout, sticky-post, threaded-comments, translation-ready, two-columns, one-column
  */
-
 /* =============================================================================
    Reset box-sizing
    ========================================================================== */
-
 *,
 *:before,
 *:after {
@@ -51,11 +47,9 @@
 /* =============================================================================
    WordPress required styles
    ========================================================================== */
-
 .wp-caption {
   max-width: 100%;
 }
-
 .wp-caption img {
   height: auto;
   width: 100%;
@@ -72,16 +66,10 @@
 /* =============================================================================
    Global styles
    ========================================================================== */
-
 a {
-  -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
-
-a:hover,
-a:active,
-a:link,
-a:visited {
+a:hover, a:active, a:link, a:visited {
   text-decoration: none;
   outline: none;
 }
@@ -91,8 +79,7 @@ ol {
   padding-left: 35px;
 }
 
-input[type="text"],
-input[type="password"] {
+input[type="text"], input[type="password"] {
   border-radius: 0;
 }
 
@@ -123,7 +110,6 @@ ul.list-group li.list-group-item {
 
 /* Genericons
    ========================================================================== */
-
 .genericon {
   line-height: normal;
   margin-top: 6px;
@@ -131,39 +117,28 @@ ul.list-group li.list-group-item {
 
 /* Bootstrap Panels
    ========================================================================== */
-
 .panel {
   border-radius: 0;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
-
-.panel.panel-heading,
-.panel.panel-body {
+.panel.panel-heading, .panel.panel-body {
   margin: 0 0 -1px !important;
 }
 
 /* Navtabs
    ========================================================================== */
-
-.nav.nav-tabs,
-.nav.nav-pills {
+.nav.nav-tabs, .nav.nav-pills {
   margin-bottom: 15px;
 }
-
-.nav.nav-tabs > li,
-.nav.nav-pills > li {
+.nav.nav-tabs > li, .nav.nav-pills > li {
   margin: 0 !important;
 }
-
-.nav.nav-tabs > li a,
-.nav.nav-pills > li a {
+.nav.nav-tabs > li a, .nav.nav-pills > li a {
   border-radius: 0;
 }
 
 /* Bootstrap carousel
    ========================================================================== */
-
 .carousel-caption {
   left: 0;
   padding-bottom: 30px;
@@ -173,7 +148,6 @@ ul.list-group li.list-group-item {
 .carousel-indicators li:not(.active) {
   margin: 0 3px;
 }
-
 .carousel-indicators li.active {
   margin: 0 2px -1px;
 }
@@ -181,7 +155,6 @@ ul.list-group li.list-group-item {
 /* =============================================================================
    Image management
    ========================================================================== */
-
 img {
   max-width: 100%;
   height: auto;
@@ -214,7 +187,6 @@ img {
 .format-image .entry-content > .wp-caption {
   width: 100% !important;
 }
-
 .format-image .entry-content > .wp-caption img {
   width: 100% !important;
 }
@@ -248,7 +220,6 @@ img {
   margin: 0 0 20px;
   padding-bottom: 20px;
 }
-
 .page-header h1 {
   margin: 0;
 }
@@ -256,17 +227,14 @@ img {
 /* =============================================================================
    Top navigation
    ========================================================================== */
-
 #top-navigation-wrapper {
   margin: 0;
   padding: 10px 0;
 }
-
 #top-navigation-wrapper.navbar-fixed-top + #main-header,
 #top-navigation-wrapper.navbar-fixed-top + #content-wrapper {
   margin-top: 68px;
 }
-
 body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
   margin-top: 32px;
 }
@@ -290,16 +258,16 @@ body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
 }
 
 .dropdown-menu {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
   border-radius: 0px;
 }
 
 /* =============================================================================
    Header styles
    ========================================================================== */
-
 #main-header {
   background-position: 0;
-  -webkit-background-size: cover;
   background-size: cover;
   min-height: 160px;
 }
@@ -308,11 +276,9 @@ body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
   min-height: 0;
   padding: 10px 30px 20px;
 }
-
 .site-branding h1 {
   margin-top: 10px;
 }
-
 .site-branding h2 {
   margin: 10px 0;
 }
@@ -320,7 +286,6 @@ body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
 /* =============================================================================
    Article
    ========================================================================== */
-
 #tinymce.wp-editor {
   padding: 15px;
 }
@@ -333,7 +298,6 @@ body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
 #tinymce.wp-editor {
   margin-bottom: 20px;
 }
-
 #main article h1,
 #main article h2,
 #main article h3,
@@ -344,27 +308,22 @@ body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
 #tinymce.wp-editor h4 {
   margin-top: 0;
 }
-
 #main article header,
 #tinymce.wp-editor header {
   margin-bottom: 25px;
 }
-
 #main article header h1,
 #tinymce.wp-editor header h1 {
   margin-top: 0;
 }
-
 #main article footer,
 #tinymce.wp-editor footer {
   padding: 25px 0;
 }
-
 #main article ul li,
 #tinymce.wp-editor ul li {
   margin-bottom: 10px;
 }
-
 #main article .entry-content,
 #main article .entry-summary,
 #tinymce.wp-editor .entry-content,
@@ -373,12 +332,10 @@ body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
   padding-bottom: 25px;
   padding-top: 25px;
 }
-
 #main article .entry-summary,
 #tinymce.wp-editor .entry-summary {
   margin-bottom: 25px;
 }
-
 #main article table,
 #tinymce.wp-editor table {
   margin-bottom: 20px;
@@ -395,7 +352,6 @@ body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
   overflow: hidden;
   padding: 25px 0;
 }
-
 .author-info .author-description {
   font-size: 14px;
   line-height: 24px;
@@ -408,7 +364,6 @@ body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
   margin-left: 101px;
   padding: 0;
 }
-
 .contact-info li {
   display: inline;
   font-size: 13px;
@@ -418,18 +373,15 @@ body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
 .entry-meta {
   overflow: hidden;
 }
-
 .entry-meta section {
   float: left;
   margin-right: 15px;
 }
-
 body.rtl .entry-meta section {
   float: right;
   margin-right: 0;
   margin-left: 15px;
 }
-
 .entry-meta section.time {
   cursor: help;
 }
@@ -438,12 +390,10 @@ body.rtl .entry-meta section {
   margin-bottom: 20px;
   padding: 5px;
 }
-
 .entry-thumbnail.landscape img {
   height: auto;
   width: 100%;
 }
-
 .entry-thumbnail.portrait {
   float: right;
   margin-left: 20px;
@@ -453,17 +403,14 @@ body.rtl .entry-meta section {
 .page-links {
   float: right;
 }
-
 .page-links .links-container {
   border-radius: 0;
   margin-top: 20px;
 }
-
 .page-links .links-container .btn {
   border-radius: 0;
   padding: 10px 15px;
 }
-
 .page-links .pagination-text:hover {
   cursor: default;
 }
@@ -475,7 +422,6 @@ body.rtl .entry-meta section {
 /* =============================================================================
    Post navigation
    ========================================================================== */
-
 .navigation.post-navigation {
   margin-bottom: 20px;
   overflow: hidden;
@@ -489,38 +435,29 @@ body.rtl .entry-meta section {
 .dropdown-menu li a {
   padding: 10px 15px;
 }
-
 .dropdown-menu > li > a {
-  -webkit-transition: none;
   transition: none;
 }
-
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
-  -webkit-transition: none;
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
   transition: none;
 }
 
 /* =============================================================================
    Comments
    ========================================================================== */
-
 #comments {
   overflow: hidden;
 }
-
 #comments h1,
 #comments h2,
 #comments h3,
 #comments h4 {
   margin-top: 0;
 }
-
 #comments .reply {
   float: right;
   margin-top: 10px;
 }
-
 #comments #reply-title {
   margin-top: 10px;
 }
@@ -530,11 +467,9 @@ ol.comment-list {
   margin: 30px 0;
   padding: 0;
 }
-
 ol.comment-list li.comment {
   margin: 20px 0;
 }
-
 ol.comment-list ol.children {
   list-style: none;
 }
@@ -555,12 +490,10 @@ ol.comment-list ol.children {
 .comment-author {
   margin-right: 20px;
 }
-
 .comment-author img {
   border-radius: 30px;
   margin-right: 20px;
 }
-
 .comment-author .says {
   display: none;
 }
@@ -581,37 +514,35 @@ ol.comment-list ol.children {
 /* =============================================================================
    Sidebar and footer
    ========================================================================== */
-
 #primary,
 #secondary {
   padding: 30px 30px;
 }
 
+#secondary .widget.widget_text .widget-title + .separator,
+#footer .widget.widget_text .widget-title + .separator {
+  margin-bottom: 10px;
+}
 #secondary .widget.widget_archive select,
 #footer .widget.widget_archive select {
   margin-top: 20px;
 }
-
 #secondary .widget.widget_categories select,
 #footer .widget.widget_categories select {
   margin-top: 20px;
 }
-
 #secondary .widget.widget_search hr,
 #footer .widget.widget_search hr {
   margin-bottom: 20px;
 }
-
 #secondary .widget.widget_rss .widget-title > a.rsswidget img,
 #footer .widget.widget_rss .widget-title > a.rsswidget img {
   display: none;
 }
-
 #secondary .widget.widget_rss .widget-title > a.rsswidget,
 #footer .widget.widget_rss .widget-title > a.rsswidget {
   display: inline-block;
 }
-
 #secondary .widget.widget_rss a.rsswidget,
 #secondary .widget.widget_rss .rss-date,
 #secondary .widget.widget_rss cite,
@@ -626,44 +557,35 @@ ol.comment-list ol.children {
 #footer .widget {
   margin-bottom: 25px;
 }
-
 #secondary .widget ul,
 #footer .widget ul {
   list-style-type: none;
   padding: 0;
 }
-
 #secondary .widget ul li,
 #footer .widget ul li {
   margin: 0;
   padding: 10px 18px;
 }
-
 #secondary .widget ul li:last-child,
 #footer .widget ul li:last-child {
   border-bottom: none;
 }
-
 #secondary .widget .widget-title,
 #footer .widget .widget-title {
   display: inline-block;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 0;
   padding: 13px 20px 10px;
 }
-
 #secondary .widget .widget-title + .search-form,
 #footer .widget .widget-title + .search-form {
   padding-top: 10px;
 }
-
 #secondary .widget .search-submit.btn,
 #footer .widget .search-submit.btn {
   border-bottom-width: 1px;
 }
-
 #secondary select,
 #footer select {
   width: 100%;
@@ -672,11 +594,9 @@ ol.comment-list ol.children {
 /* =============================================================================
    Footer only
    ========================================================================== */
-
 #footer .widget .widget-title + .separator {
   margin: 0;
 }
-
 #footer .container {
   padding: 30px;
 }
@@ -684,7 +604,6 @@ ol.comment-list ol.children {
 #credits {
   padding-left: 0;
 }
-
 #credits p {
   margin-bottom: 0;
 }
@@ -693,14 +612,12 @@ ol.comment-list ol.children {
   padding-right: 0;
   text-align: right;
 }
-
 #social-menu ul {
   display: inline;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 #social-menu ul li {
   display: inline;
 }
@@ -708,37 +625,35 @@ ol.comment-list ol.children {
 /* =============================================================================
    Bootstrap submenus (styles deprecated in Bootstrap 3.x)
    ========================================================================== */
-
 #top-navigation .dropdown-submenu {
   position: relative;
 }
-
 #top-navigation .dropdown-submenu .dropdown-menu {
   top: 0;
   left: 100%;
   margin-top: -6px;
   margin-left: -1px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   border-radius: 0;
 }
-
 #top-navigation .dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
-
 #top-navigation .dropdown-submenu .pull-left {
   float: none;
 }
-
 #top-navigation .dropdown-submenu .pull-left > .dropdown-menu {
   left: -100%;
   margin-left: 10px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   border-radius: 0;
 }
 
 /* =============================================================================
    Buttons
    ========================================================================== */
-
 .more-link {
   display: block;
   margin: 25px 0 0;
@@ -749,24 +664,16 @@ ol.comment-list ol.children {
   border-width: 0;
   border-bottom-width: 3px;
 }
-
-.btn:hover,
-.btn:active,
-.btn:link,
-.btn:visited,
-.btn:focus,
-.btn:active:focus {
+.btn:hover, .btn:active, .btn:link, .btn:visited, .btn:focus, .btn:active:focus {
   outline: none;
 }
 
 /* =============================================================================
    Paging navigation
    ========================================================================== */
-
 .paging-navigation {
   overflow: hidden;
 }
-
 .infinity-success .paging-navigation {
   display: none;
 }
@@ -774,7 +681,6 @@ ol.comment-list ol.children {
 .nav-links .pull-left a.btn {
   padding: 10px 15px 5px 10px;
 }
-
 .nav-links .pull-right a.btn {
   padding: 10px 10px 5px 15px;
 }
@@ -782,7 +688,6 @@ ol.comment-list ol.children {
 /* =============================================================================
    Support for media embeds
    ========================================================================== */
-
 iframe[src*="youtube.com"] {
   width: 100%;
 }
@@ -803,11 +708,9 @@ embed[src*="v.wordpress.com"] {
 /* =============================================================================
    Support for Facebook likebox
    ========================================================================== */
-
 .widget_facebook_likebox iframe {
   max-width: 100%;
 }
-
 #secondary .widget_facebook_likebox.widget .widget-title + .separator {
   margin-bottom: 15px;
 }
@@ -815,21 +718,17 @@ embed[src*="v.wordpress.com"] {
 /* =============================================================================
    Support for Gravatar profile (via Jetpack)
    ========================================================================== */
-
 #secondary .widget-grofile.widget .widget-title + .separator {
   margin-bottom: 20px;
 }
-
 .widget-grofile .grofile-meta {
   margin-top: 15px;
 }
-
 #secondary .widget-grofile.widget h4:not(.widget-title) {
   margin: 5px 0;
   padding: 0;
   text-transform: none;
 }
-
 #footer .widget-grofile.widget h4:not(.widget-title) {
   margin: 5px 0;
   padding: 0;
@@ -839,15 +738,12 @@ embed[src*="v.wordpress.com"] {
 /* =============================================================================
    Support for RSS feeds (via Jetpack)
    ========================================================================== */
-
 #secondary .widget_rss_links.widget .widget-title + .separator {
   margin-bottom: 15px;
 }
-
 #footer .widget_rss_links.widget .widget-title + .separator {
   margin-bottom: 15px;
 }
-
 .widget_rss_links img {
   max-width: 24px;
 }
@@ -855,7 +751,6 @@ embed[src*="v.wordpress.com"] {
 /* =============================================================================
    Support for Twitter Timeline (via Jetpack)
    ========================================================================== */
-
 #secondary .widget_twitter_timeline.widget .widget-title + .separator {
   margin-bottom: 15px;
 }
@@ -863,7 +758,6 @@ embed[src*="v.wordpress.com"] {
 /* =============================================================================
    Support for Readmill (via Jetpack)
    ========================================================================== */
-
 #secondary .widget_jetpack_readmill_widget.widget .widget-title + .separator {
   margin-bottom: 15px;
 }
@@ -871,44 +765,28 @@ embed[src*="v.wordpress.com"] {
 /* =============================================================================
    Support for Sharing (via Jetpack)
    ========================================================================== */
-
-.entry-content div.sharedaddy,
-.entry-summary div.sharedaddy {
+.entry-content div.sharedaddy, .entry-summary div.sharedaddy {
   margin: 25px 0 0;
 }
-
-.entry-content div.sharedaddy .sd-content,
-.entry-summary div.sharedaddy .sd-content {
+.entry-content div.sharedaddy .sd-content, .entry-summary div.sharedaddy .sd-content {
   float: left;
 }
-
-.entry-content div.sharedaddy + .sharedaddy,
-.entry-summary div.sharedaddy + .sharedaddy {
+.entry-content div.sharedaddy + .sharedaddy, .entry-summary div.sharedaddy + .sharedaddy {
   margin: 0;
 }
-
-.entry-content div.sharedaddy + .sharedaddy .sd-block,
-.entry-content div.sharedaddy + .sharedaddy.sd-block,
-.entry-summary div.sharedaddy + .sharedaddy .sd-block,
-.entry-summary div.sharedaddy + .sharedaddy.sd-block {
+.entry-content div.sharedaddy + .sharedaddy .sd-block, .entry-content div.sharedaddy + .sharedaddy.sd-block, .entry-summary div.sharedaddy + .sharedaddy .sd-block, .entry-summary div.sharedaddy + .sharedaddy.sd-block {
   padding: 0;
 }
-
-.entry-content div.sharedaddy .sd-block,
-.entry-content div.sharedaddy.sd-block,
-.entry-summary div.sharedaddy .sd-block,
-.entry-summary div.sharedaddy.sd-block {
+.entry-content div.sharedaddy .sd-block, .entry-content div.sharedaddy.sd-block, .entry-summary div.sharedaddy .sd-block, .entry-summary div.sharedaddy.sd-block {
   padding: 10px 0 0;
 }
 
 /* =============================================================================
    Support for Suscription (via Jetpack)
    ========================================================================== */
-
 .widget.jetpack_subscription_widget form {
   margin-top: 10px;
 }
-
 .widget.jetpack_subscription_widget .widget-title label {
   margin: 0;
   font-weight: normal;
@@ -917,7 +795,6 @@ embed[src*="v.wordpress.com"] {
 /* =============================================================================
    Extra responsive styles
    ========================================================================== */
-
 @media screen and (max-width: 782px) {
   #wpadminbar {
     position: fixed;
@@ -927,8 +804,7 @@ embed[src*="v.wordpress.com"] {
     margin-top: 46px;
   }
 
-  #credits,
-  #social-menu {
+  #credits, #social-menu {
     padding: 0;
     text-align: center;
   }

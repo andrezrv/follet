@@ -608,6 +608,13 @@ ol.comment-list ol.children {
   margin-bottom: 0;
 }
 
+#footer-sidebars.container {
+  padding-bottom: 0;
+}
+#footer-sidebars + .separator {
+  margin: 0;
+}
+
 #social-menu {
   padding-right: 0;
   text-align: right;

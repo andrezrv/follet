@@ -6,6 +6,6 @@
  * @since   1.0
  */
 ?>
-	<div id="credits" class="site-info credits col-sm-8">
+	<div id="credits" class="site-info credits col-sm-6">
 		<p><?php follet_credits(); ?></p>
 	</div>

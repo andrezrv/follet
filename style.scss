@@ -69,6 +69,10 @@
    Global styles
    ========================================================================== */
 
+html {
+	min-width: 320px;
+}
+
 a {
 	transition: color 0.3s ease;
 	&:hover,
@@ -866,6 +870,9 @@ embed[src*="v.wordpress.com"] {
 		.sd-block, &.sd-block {
 			padding: 10px 0 0;
 		}
+		.post-likes-widget {
+			width: 84.30%;
+		}
 	}
 }
 
@@ -902,5 +909,34 @@ embed[src*="v.wordpress.com"] {
 	#credits, #social-menu {
 		padding: 0;
 		text-align: center;
+	}
+}
+
+@media screen and (max-width:380px) {
+	.entry-thumbnail.portrait {
+	    float: none;
+	    margin-left: 0;
+	    max-width: none;
+	    img.vertical-image {
+	    	width: 100%;
+	    }
+	}
+	.nav-links {
+		.pull-left, .pull-right {
+			float: none;
+			width: 100%;
+		}
+		.pull-left + .pull-right {
+			margin-top: 20px;
+		}
+		a {
+			display: block;
+			width: 100%;
+		}
+	}
+	.gallery-item {
+		.wp-caption-text {
+			display: none;
+		}
 	}
 }

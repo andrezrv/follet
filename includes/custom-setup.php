@@ -52,7 +52,7 @@ function follet_register_options( $options ) {
 		'post_avatar_show'                 => false,
 		'post_author_info_show'            => false,
 		'breadcrumbs_show'                 => true,
-		'contact_methods_show'             => true,
+		'contact_methods_show'             => false,
 		'responsive_videos'                => true,
 		'contact_methods'                  => array(
 			'feed'       => 'RSS',

@@ -16,7 +16,7 @@
 			<?php if ( $posts_url = get_author_posts_url( get_the_author_meta( 'ID' ) ) ) : ?>
 				<li>
 					<a href="<?php echo $posts_url; ?>">
-						<label class="dashicons dashicons-admin-page"></label>&nbsp;
+						<label class="icon icon-author-archive"></label>&nbsp;
 						<?php _e( 'All posts', 'follet_theme' ); ?>
 					</a>
 				</li>

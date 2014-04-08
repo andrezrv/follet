@@ -9,14 +9,30 @@
    Top navigation
    ========================================================================== */
 
-#top-navigation .dropdown-submenu {
-	> a:after {
-		content: "\f345";
-		font-family: 'dashicons';
-		font-size: 12px;
-		line-height: 20px;
-		position: absolute;
-		right: 15px;
+#top-navigation {
+	.dropdown-submenu {
+		> a:after {
+			content: "\f345";
+			font-family: 'dashicons';
+			font-size: 12px;
+			line-height: 20px;
+			position: absolute;
+			right: 15px;
+		}
+	}
+}
+
+#top-navigation-searchform-show {
+	.icon {
+		&:before {
+			font-family: 'dashicons';
+		    font-size: 20px;
+		    vertical-align: bottom;
+		}
+		&.icon-search:before {
+			content: "\f179";
+			-webkit-text-stroke-width: 0.3px;
+		}
 	}
 }
 
@@ -97,6 +113,16 @@ b.icon.icon-arrow-down:before {
 }
 
 .contact-info {
+	.icon {
+		&:before {
+			font-family: 'dashicons';
+		    font-size: 20px;
+		    vertical-align: bottom;
+		}
+		&.icon-author-archive:before {
+			content: "\f105";
+		}
+	}
 	.genericon {
 		font-size: 19px;
 		margin-bottom: 0;

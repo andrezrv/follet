@@ -34,7 +34,7 @@
 					<?php if ( follet_get_current( 'top_navigation_searchform_show' ) ) : ?>
 
 						<div id="top-navigation-searchform-show" class="visible-lg visible-md visible-sm">
-							<a href="#" class="dashicons dashicons-search"></a>
+							<a href="#" class="icon icon-search"></a>
 						</div>
 						<div id="top-navigation-searchform" class="visible-xs">
 							<?php get_template_part( 'searchform', get_post_format() ); ?>

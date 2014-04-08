@@ -14,13 +14,52 @@
 
 @font-face {
 	font-family: 'Genericons';
-	src: url('../includes/genericons/font/genericons-regular-webfont.eot');
-	src: url('../includes/genericons/font/genericons-regular-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('../includes/genericons/font/genericons-regular-webfont.woff') format('woff'),
-		 url('../includes/genericons/font/genericons-regular-webfont.ttf') format('truetype'),
-		 url('../includes/genericons/font/genericons-regular-webfont.svg#genericonsregular') format('svg');
+	src: url('../fonts/genericons/font/genericons-regular-webfont.eot');
+	src: url('../fonts/genericons/font/genericons-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/genericons/font/genericons-regular-webfont.woff') format('woff'),
+		 url('../fonts/genericons/font/genericons-regular-webfont.ttf') format('truetype'),
+		 url('../fonts/genericons/font/genericons-regular-webfont.svg#genericonsregular') format('svg');
 	font-weight: normal;
 	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: 'Genericons';
+		src: url('../includes/genericons/font/genericons-regular-webfont.svg#genericonsregular') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: 400;
+		src: url('../fonts/open-sans/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+	}
+	@font-face {
+		font-family: 'Open Sans';
+		font-style: italic;
+		font-weight: 400;
+		src: url('../fonts/open-sans/OpenSans-Italic.svg#OpenSans-Italic') format('svg');
+	}
+	@font-face {
+		font-family: 'Open Sans';
+		font-style: bold;
+		font-weight: 700;
+		src: url('../fonts/open-sans/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+	}
+	@font-face {
+		font-family: 'Neuton';
+		font-style: normal;
+		font-weight: 400;
+		src: url('../fonts/neuton/Neuton-Regular.svg#Neuton-Regular') format('svg');
+	}
+	@font-face {
+		font-family: 'Neuton';
+		font-style: bold;
+		font-weight: 700;
+		src: url('../fonts/neuton/Neuton-Bold.svg#Neuton-Bold') format('svg');
+	}
 }
 
 body {
@@ -42,6 +81,7 @@ body {
 		font-size: 56px;
 		font-weight: bold;
 		line-height: 56px;
+		//-webkit-text-stroke-width: 0.1px;
 		a {
 			&:hover, &:focus, &:active {
 				text-decoration: none;
@@ -50,6 +90,7 @@ body {
 	}
 	h2 {
 		font-size: 38px;
+		//-webkit-text-stroke-width: 0.2px;
 	}
 }
 
@@ -185,9 +226,18 @@ body {
 /* =============================================================================
    Support for Suscription (via Jetpack)
    ========================================================================== */
+
 .widget.jetpack_subscription_widget {
 	form {
 		font-size: 13px;
 		line-height: 24px;
 	}
+}
+
+/* =============================================================================
+   Support for Related Posts (via Jetpack)
+   ========================================================================== */
+
+div.jp-relatedposts .jp-relatedposts-headline {
+	font-size: 22px;
 }

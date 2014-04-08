@@ -16,6 +16,16 @@
   right: 15px;
 }
 
+#top-navigation-searchform-show .icon:before {
+  font-family: 'dashicons';
+  font-size: 20px;
+  vertical-align: bottom;
+}
+#top-navigation-searchform-show .icon.icon-search:before {
+  content: "\f179";
+  -webkit-text-stroke-width: 0.3px;
+}
+
 .nav-links .icon:before {
   font-family: 'dashicons';
   font-size: 20px;
@@ -79,6 +89,14 @@ b.icon.icon-arrow-down:before {
   content: "\f103";
 }
 
+.contact-info .icon:before {
+  font-family: 'dashicons';
+  font-size: 20px;
+  vertical-align: bottom;
+}
+.contact-info .icon.icon-author-archive:before {
+  content: "\f105";
+}
 .contact-info .genericon {
   font-size: 19px;
   margin-bottom: 0;

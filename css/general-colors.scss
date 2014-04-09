@@ -357,6 +357,7 @@ blockquote {
 
 .btn {
 	&.btn-primary,
+	&.btn-secondary,
 	&.btn-success,
 	&.btn-info,
 	&.btn-warning,
@@ -366,6 +367,9 @@ blockquote {
 	}
 	&.navbar-toggle {
 		border: none;
+	}
+	&.btn-secondary {
+		color: $white;
 	}
 }
 

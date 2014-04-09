@@ -253,12 +253,15 @@ blockquote {
 /* =============================================================================
    Buttons
    ========================================================================== */
-.btn.btn-primary, .btn.btn-success, .btn.btn-info, .btn.btn-warning, .btn.btn-danger {
+.btn.btn-primary, .btn.btn-secondary, .btn.btn-success, .btn.btn-info, .btn.btn-warning, .btn.btn-danger {
   border-color: transparent;
   border-color: rgba(0, 0, 0, 0.15);
 }
 .btn.navbar-toggle {
   border: none;
+}
+.btn.btn-secondary {
+  color: white;
 }
 
 /* =============================================================================

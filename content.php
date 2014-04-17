@@ -29,10 +29,11 @@
 	</header>
 
 	<?php // Only display Excerpts for Search and Home, if excerpt exists. ?>
-	<?php if ( ( is_search() or is_home() ) && $post->post_excerpt ) : ?>
+	<?php if ( ( is_search() or is_home() or is_archive() ) && $post->post_excerpt ) : ?>
 
 		<div class="entry-summary" <?php follet_microdata( 'entry-summary' ); ?>>
 			<?php the_excerpt(); ?>
+			<?php follet_continue_reading( true, true ); ?>
 		</div>
 
 	<?php else : ?>

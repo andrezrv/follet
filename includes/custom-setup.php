@@ -180,7 +180,7 @@ function follet_add_editor_styles() {
 
 	$template_directory_uri = follet_template_directory_uri();
 
-	add_editor_style( $template_directory_uri . '/includes/genericons/genericons.css' );
+	add_editor_style( $template_directory_uri . '/fonts/genericons/genericons.css' );
 	add_editor_style( $template_directory_uri . '/css/fonts.css' );
 	add_editor_style( $template_directory_uri . '/css/icons.css' );
 	add_editor_style( $template_directory_uri . '/css/general-colors.css' );

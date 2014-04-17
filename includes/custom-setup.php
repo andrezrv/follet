@@ -436,12 +436,17 @@ function follet_bootstrap_carousel_control( $control ) {
 endif;
 add_filter( 'agnosia_bootstrap_carousel_control', 'follet_bootstrap_carousel_control' );
 
+/**
+ * Automatically modify content_width when sidebar is not present.
+ * @return void
+ * @since  1.0
+ */
 function follet_content_width() {
-	/*if (   ! is_active_sidebar( 'sidebar-primary' )
+	if (   ! is_active_sidebar( 'sidebar-primary' )
 		|| ! follet_get_current( 'sidebar_primary_show' )
-	) {*/
+	) {
 		$GLOBALS['content_width'] = 1110;
-	/*}*/
+	}
 }
 add_action( 'wp_head', 'follet_content_width' );
 

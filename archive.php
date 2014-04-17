@@ -70,6 +70,9 @@
 						elseif ( is_tax( 'post_format', 'post-format-chat' ) ) :
 							_e( 'Chats', 'follet_theme' );
 
+						elseif ( is_tax() ) :
+							echo get_queried_object()->name;
+
 						else :
 							_e( 'Archives', 'follet_theme' );
 

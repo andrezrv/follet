@@ -78,6 +78,10 @@ a:hover, a:active, a:link, a:visited {
   outline: none;
 }
 
+p {
+  margin: 0 0 15px;
+}
+
 ul,
 ol {
   padding-left: 35px;
@@ -310,7 +314,7 @@ body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
 #tinymce.wp-editor h2,
 #tinymce.wp-editor h3,
 #tinymce.wp-editor h4 {
-  margin-top: 0;
+  margin-top: 20px;
 }
 #main article header,
 #tinymce.wp-editor header {

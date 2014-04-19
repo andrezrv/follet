@@ -258,6 +258,13 @@ img {
 	h1 {
 		margin: 0;
 	}
+	.taxonomy-description {
+		margin-top: 10px;
+		p {
+			line-height: 25px;
+			margin-bottom: 5px;
+		}
+	}
 }
 
 /* =============================================================================
@@ -363,9 +370,6 @@ img {
 		overflow: hidden;
 		padding-bottom: 25px;
 		padding-top: 25px;
-	}
-	.entry-summary {
-		margin-bottom: 25px;
 	}
 	table {
 		margin-bottom: 20px;

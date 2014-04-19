@@ -18,13 +18,11 @@ if ( ! function_exists( 'follet_register_options' ) ) :
  * @return void
  * @since  1.0
  */
-function follet_register_options( $options ) {
-
-	//die( bloginfo( 'language' ));
+function follet_register_options() {
 
 	do_action( 'follet_options_register' );
 
-	$options = array(
+	$options = [
 		'top_navigation_show'              => true,
 		'top_navigation_fix_top'           => false,
 		'top_navigation_searchform_show'   => false,
@@ -40,6 +38,7 @@ function follet_register_options( $options ) {
 		'header_background_color'          => '#428BCA',
 		'header_background_ignore'         => false,
 		'primary_sidebar_background_color' => '#FFFFFF',
+		'show_footer_in_summary'           => true,
 		'footer_show'                      => true,
 		'back_to_top_show'                 => true,
 		'footer_credits_show'              => true,
@@ -68,7 +67,7 @@ function follet_register_options( $options ) {
 			'vimeo'      => 'Vimeo',
 			'youtube'    => 'YouTube',
 		)
-	);
+	];
 	foreach ( $options as $name => $default ) {
 		if ( ! follet_option_exists( $name ) ) {
 			follet_register_option(

@@ -36,6 +36,10 @@
 			<?php follet_continue_reading( true, true ); ?>
 		</div>
 
+		<?php if ( follet_get_current( 'show_footer_in_summary' ) ) : ?>
+			<?php get_template_part( 'templates/content-footer', '' ); ?>
+		<?php endif; ?>
+
 	<?php else : ?>
 
 		<div class="entry-content" <?php follet_microdata( 'entry-content' ); ?>>
@@ -46,8 +50,8 @@
 
 		</div>
 
-	<?php endif; ?>
+		<?php get_template_part( 'templates/content-footer', '' ); ?>
 
-	<?php get_template_part( 'templates/content-footer', '' ); ?>
+	<?php endif; ?>
 
 </article>

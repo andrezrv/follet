@@ -231,6 +231,13 @@ img {
 .page-header h1 {
   margin: 0;
 }
+.page-header .taxonomy-description {
+  margin-top: 10px;
+}
+.page-header .taxonomy-description p {
+  line-height: 25px;
+  margin-bottom: 5px;
+}
 
 /* =============================================================================
    Top navigation
@@ -339,10 +346,6 @@ body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
   overflow: hidden;
   padding-bottom: 25px;
   padding-top: 25px;
-}
-#main article .entry-summary,
-#tinymce.wp-editor .entry-summary {
-  margin-bottom: 25px;
 }
 #main article table,
 #tinymce.wp-editor table {

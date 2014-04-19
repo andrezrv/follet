@@ -641,7 +641,7 @@ ol.comment-list {
 		}
 		.widget-title {
 			display: inline-block;
-			display: inline-flex;
+			display: inline-flex; // Use inline-flex if supported - otherwise inline-block will be used.
 			margin: 0;
 			padding: 13px 20px 10px;
 			+ .search-form {

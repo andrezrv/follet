@@ -74,7 +74,11 @@
 							echo get_queried_object()->name;
 
 						else :
-							_e( 'Archives', 'follet_theme' );
+							if ( $title = get_queried_object()->labels->name ) {
+								echo $title;
+							} else {
+								_e( 'Archives', 'follet_theme' );
+							}
 
 						endif;
 					?>
@@ -86,6 +90,8 @@
 					$term_description = term_description();
 					if ( ! empty( $term_description ) ) :
 						printf( '<div class="taxonomy-description">%s</div>', $term_description );
+					elseif ( get_queried_object() && $description = get_queried_object()->description ) :
+						printf( '<div class="taxonomy-description">%s</div>', $description );
 					endif;
 				?>
 

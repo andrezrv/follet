@@ -22,7 +22,7 @@ function follet_register_options() {
 
 	do_action( 'follet_options_register' );
 
-	$options = [
+	$options = array(
 		'top_navigation_show'              => true,
 		'top_navigation_fix_top'           => false,
 		'top_navigation_searchform_show'   => false,
@@ -67,7 +67,7 @@ function follet_register_options() {
 			'vimeo'      => 'Vimeo',
 			'youtube'    => 'YouTube',
 		)
-	];
+	);
 	foreach ( $options as $name => $default ) {
 		if ( ! follet_option_exists( $name ) ) {
 			follet_register_option(

@@ -147,6 +147,14 @@ ul.list-group li.list-group-item {
 
 /* Bootstrap carousel
    ========================================================================== */
+.carousel {
+  margin-bottom: 25px;
+}
+
+.carousel-control {
+  z-index: 10;
+}
+
 .carousel-caption {
   left: 0;
   padding-bottom: 30px;

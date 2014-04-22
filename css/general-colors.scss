@@ -260,7 +260,8 @@ blockquote {
 	}
 }
 
-.wp-caption-text {
+.wp-caption-text,
+.wp-caption-dd {
 	background-color: $light-grey;
 }
 

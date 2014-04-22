@@ -119,9 +119,11 @@ body {
   font-size: 20px;
 }
 
-.wp-caption-text {
-  text-align: center;
+.wp-caption-text,
+.wp-caption-dd {
+  font-size: 15px;
   font-style: italic;
+  text-align: center;
 }
 
 .carousel-caption {

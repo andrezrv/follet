@@ -48,14 +48,17 @@
    WordPress required styles
    ========================================================================== */
 .wp-caption {
+  border: none;
   max-width: 100%;
+  padding: 0;
 }
 .wp-caption img {
   height: auto;
   width: 100%;
 }
 
-.wp-caption-text {
+.wp-caption-text,
+.wp-caption-dd {
   padding: 10px;
 }
 
@@ -197,7 +200,7 @@ img {
 
 .aligncenter {
   text-align: center;
-  margin: 0 0 20px;
+  margin: 0 auto 20px;
 }
 
 .format-image .entry-content > .wp-caption {
@@ -830,6 +833,14 @@ embed[src*="v.wordpress.com"] {
 .widget.jetpack_subscription_widget .widget-title label {
   margin: 0;
   font-weight: normal;
+}
+
+/* =============================================================================
+   Support for WordPress.com stats (via Jetpack)
+   ========================================================================== */
+#wpstats {
+  margin: 5px auto;
+  display: block;
 }
 
 /* =============================================================================

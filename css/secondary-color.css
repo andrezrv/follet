@@ -37,7 +37,8 @@ a:hover {
   color: #d9534f;
 }
 
-.wp-caption-text {
+.wp-caption-text,
+.wp-caption-dd {
   border-bottom: 2px solid #d9534f;
 }
 

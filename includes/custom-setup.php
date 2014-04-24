@@ -202,7 +202,7 @@ function follet_enqueue_scripts() {
 
 	wp_enqueue_style(
 		'genericons',
-		$template_directory_uri . '/includes/genericons/genericons.css',
+		$template_directory_uri . '/fonts/genericons/genericons.css',
 		false,
 		'3.0.3'
 	);
@@ -336,7 +336,7 @@ if ( ! function_exists( 'follet_post_comments_section_microdata' ) ) :
  */
 function follet_post_comments_section_microdata( $output ) {
 	$output = str_replace( '<section', '<section ' . follet_microdata( 'comments-link', false ), $output );
-	$output = str_replace( '<a ', '<a ' . follet_microdata( 'url', false ), $output );
+	$output = str_replace( '<a', '<a ' . follet_microdata( 'url', false ), $output );
 	return $output;
 }
 endif;

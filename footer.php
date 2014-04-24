@@ -31,7 +31,7 @@
 						or follet_get_current( 'social_navigation_show' ) ) :
 				?>
 
-					<div role="footer-container" class="<?php follet_container_class( 'footer-container' ); ?>">
+					<div role="navigation" class="<?php follet_container_class( 'footer-container' ); ?>">
 
 						<?php if ( follet_get_current( 'footer_credits_show' ) ) : ?>
 							<?php get_template_part( 'templates/footer-credits', get_post_format() ); ?>

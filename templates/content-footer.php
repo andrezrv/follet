@@ -31,7 +31,7 @@
 
 		<section class="permalink" <?php follet_microdata( 'permalink' ); ?>>
 			<span class="icon icon-permalink"></span>&nbsp;
-			<a href="<?php the_permalink(); ?>" role="permalink" <?php follet_microdata( 'url' ); ?>>
+			<a href="<?php the_permalink(); ?>" role="link" <?php follet_microdata( 'url' ); ?>>
 				<?php _e( 'Permalink', 'follet_theme' ); ?>
 			</a>
 		</section>

@@ -7,7 +7,7 @@
  */
 ?>
 
-	<div id="footer-sidebars" role="footer-container" class="<?php follet_container_class( 'footer-sidebars' ); ?>">
+	<div id="footer-sidebars" role="navigation" class="<?php follet_container_class( 'footer-sidebars' ); ?>">
 
 		<?php $i = 1; while( $i <= 3 ) : ?>
 

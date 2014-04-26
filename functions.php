@@ -22,13 +22,6 @@ define( 'FOLLET_THEME_VERSION', '1.0' );
 $template_directory = get_template_directory();
 
 /**
- * Set the content width based on the theme's design and stylesheet.
- */
-if ( ! isset( $content_width ) ) {
-	$content_width = 719; // pixels.
-}
-
-/**
  * Follet Core framework.
  */
 require $template_directory . '/includes/follet-core/follet-load.php';

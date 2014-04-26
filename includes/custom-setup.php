@@ -436,18 +436,25 @@ endif;
 add_filter( 'agnosia_bootstrap_carousel_control', 'follet_bootstrap_carousel_control' );
 
 /**
- * Automatically modify content_width when sidebar is not present.
+ * Set content_width by sidebar availability.
+ *
  * @return void
  * @since  1.0
  */
 function follet_content_width() {
+
+	global $content_width;
+
 	if (   ! is_active_sidebar( 'sidebar-primary' )
 		|| ! follet_get_current( 'sidebar_primary_show' )
 	) {
-		$GLOBALS['content_width'] = 1110;
+		$content_width = 1110;
+	} else {
+		$content_width = 719;
 	}
+
 }
-add_action( 'wp_head', 'follet_content_width' );
+add_action( 'after_setup_theme', 'follet_content_width' );
 
 /**
  * Add a hook for custom actions before loading the next file.

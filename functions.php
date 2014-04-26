@@ -27,6 +27,11 @@ $template_directory = get_template_directory();
 require $template_directory . '/includes/follet-core/follet-load.php';
 
 /**
+ * Internal functions.
+ */
+require $template_directory . '/includes/internal.php';
+
+/**
  * Custom actions for this theme.
  */
 require $template_directory . '/includes/custom-setup.php';

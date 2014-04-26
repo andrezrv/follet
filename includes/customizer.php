@@ -100,10 +100,10 @@ function follet_customize_top_navigation( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_setting( 'top_navigation_searchform_show' , array(
-		'default'   => false,
-		'transport' => 'refresh',
-
+	$wp_customize->add_setting( 'top_navigation_searchform_show', array(
+		'default'           => false,
+		'transport'         => 'refresh',
+		'sanitize_callback' => '_follet_sanitize_boolean',
 	) );
 
 	$wp_customize->add_control(
@@ -200,9 +200,10 @@ function follet_customize_header_logo( $wp_customize ) {
 			)
 		);
 
-		$wp_customize->add_setting( 'header_logo_img' , array(
-			'default'   => follet_get_default( 'header_logo_img' ),
-			'transport' => 'refresh',
+		$wp_customize->add_setting( 'header_logo_img', array(
+			'default'           => follet_get_default( 'header_logo_img' ),
+			'transport'         => 'refresh',
+			'sanitize_callback' => '_follet_sanitize_upload',
 		) );
 
 		$wp_customize->add_control(
@@ -249,9 +250,10 @@ function follet_customize_colors( $wp_customize ) {
 	$wp_customize->get_control( 'header_textcolor' )->priority = 5;
 	$wp_customize->get_control( 'background_color' )->priority = 12;
 
-	$wp_customize->add_setting( 'primary_color' , array(
-		'default'   => follet_get_default( 'primary_color' ),
-		'transport' => 'refresh',
+	$wp_customize->add_setting( 'primary_color', array(
+		'default'           => follet_get_default( 'primary_color' ),
+		'transport'         => 'refresh',
+		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 
 	$wp_customize->add_control(
@@ -284,9 +286,10 @@ function follet_customize_colors( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_setting( 'secondary_color' , array(
-		'default'   => follet_get_default( 'secondary_color' ),
-		'transport' => 'refresh',
+	$wp_customize->add_setting( 'secondary_color', array(
+		'default'           => follet_get_default( 'secondary_color' ),
+		'transport'         => 'refresh',
+		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 
 	$wp_customize->add_control(
@@ -319,9 +322,10 @@ function follet_customize_colors( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_setting( 'header_background_color' , array(
-		'default'   => follet_get_default( 'header_background_color' ),
-		'transport' => 'refresh',
+	$wp_customize->add_setting( 'header_background_color', array(
+		'default'           => follet_get_default( 'header_background_color' ),
+		'transport'         => 'refresh',
+		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 
 	$wp_customize->add_control(
@@ -375,9 +379,10 @@ function follet_customize_colors( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_setting( 'primary_sidebar_background_color' , array(
-		'default'   => follet_get_default( 'primary_sidebar_background_color' ),
-		'transport' => 'refresh',
+	$wp_customize->add_setting( 'primary_sidebar_background_color', array(
+		'default'           => follet_get_default( 'primary_sidebar_background_color' ),
+		'transport'         => 'refresh',
+		'sanitize_callback' => 'sanitize_hex_color',
 	) );
 
 	$wp_customize->add_control(

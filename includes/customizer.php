@@ -43,8 +43,9 @@ function follet_customize_top_navigation( $wp_customize ) {
 		'priority' => 31,
 	) );
 
-	$wp_customize->add_setting( 'top_navigation_tip' , array(
-		'default'   => '<p>' . apply_filters( 'follet_top_navigation_tip', sprintf( __( '%1$sTip:%2$s Even with "Show Top Navigation" checked, Top Navigation will not show if you have not set a custom menu under Navigation > Top Menu.', 'follet_theme' ), '<strong>', '</strong>' ) ) . '</p>',
+	$wp_customize->add_setting( 'top_navigation_tip', array(
+		'default'           => _follet_top_navigation_tip(),
+		'sanitize_callback' => '_follet_top_navigation_tip',
 	) );
 
 	$wp_customize->add_control(
@@ -59,9 +60,10 @@ function follet_customize_top_navigation( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_setting( 'top_navigation_show' , array(
-		'default'   => follet_get_default( 'top_navigation_show' ),
-		'transport' => 'refresh',
+	$wp_customize->add_setting( 'top_navigation_show', array(
+		'default'           => follet_get_default( 'top_navigation_show' ),
+		'transport'         => 'refresh',
+		'sanitize_callback' => '_follet_sanitize_boolean',
 	) );
 
 	$wp_customize->add_control(
@@ -78,9 +80,10 @@ function follet_customize_top_navigation( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_setting( 'top_navigation_fix_top' , array(
-		'default'   => follet_get_default( 'top_navigation_fix_top' ),
-		'transport' => 'refresh',
+	$wp_customize->add_setting( 'top_navigation_fix_top', array(
+		'default'           => follet_get_default( 'top_navigation_fix_top' ),
+		'transport'         => 'refresh',
+		'sanitize_callback' => '_follet_sanitize_boolean',
 	) );
 
 	$wp_customize->add_control(
@@ -100,6 +103,7 @@ function follet_customize_top_navigation( $wp_customize ) {
 	$wp_customize->add_setting( 'top_navigation_searchform_show' , array(
 		'default'   => false,
 		'transport' => 'refresh',
+
 	) );
 
 	$wp_customize->add_control(
@@ -116,9 +120,10 @@ function follet_customize_top_navigation( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_setting( 'top_navigation_style' , array(
-		'default'   => follet_get_default( 'top_navigation_style' ),
-		'transport' => 'refresh',
+	$wp_customize->add_setting( 'top_navigation_style', array(
+		'default'           => follet_get_default( 'top_navigation_style' ),
+		'transport'         => 'refresh',
+		'sanitize_callback' => '_follet_sanitize_top_navigation_style',
 	) );
 
 	$wp_customize->add_control(
@@ -158,8 +163,9 @@ function follet_customize_header_logo( $wp_customize ) {
 			'priority' => $wp_customize->get_section( 'title_tagline' )->priority + 1,
 		) );
 
-		$wp_customize->add_setting( 'header_logo_tip' , array(
-			'default'   => '<p>' . apply_filters( 'follet_header_logo_tip', sprintf( __( 'Here you can upload your own logo and use it instead of the Site Title & Tagline values.', 'follet_theme' ), '<strong>', '</strong>' ) ) . '</p>',
+		$wp_customize->add_setting( 'header_logo_tip', array(
+			'default'           => _follet_header_logo_tip(),
+			'sanitize_callback' => '_follet_header_logo_tip',
 		) );
 
 		$wp_customize->add_control(
@@ -174,9 +180,10 @@ function follet_customize_header_logo( $wp_customize ) {
 			)
 		);
 
-		$wp_customize->add_setting( 'header_logo_show' , array(
-			'default'   => follet_get_default( 'header_logo_show' ),
-			'transport' => 'refresh',
+		$wp_customize->add_setting( 'header_logo_show', array(
+			'default'           => follet_get_default( 'header_logo_show' ),
+			'transport'         => 'refresh',
+			'sanitize_callback' => '_follet_sanitize_boolean',
 		) );
 
 		$wp_customize->add_control(
@@ -260,8 +267,9 @@ function follet_customize_colors( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_setting( 'primary_color_tip' , array(
-		'default'   => '<div style="margin-bottom: 10px;">' . apply_filters( 'follet_primary_color_tip', __( 'This is the main color of the theme. It is used for links, separators, buttons and backgrounds for widget titles in the primary sidebar.', 'follet_theme' ) ) . '</div>',
+	$wp_customize->add_setting( 'primary_color_tip', array(
+		'default'           => _follet_primary_color_tip(),
+		'sanitize_callback' => '_follet_primary_color_tip',
 	) );
 
 	$wp_customize->add_control(
@@ -294,8 +302,9 @@ function follet_customize_colors( $wp_customize ) {
 		)
 	);
 
-	$wp_customize->add_setting( 'secondary_color_tip' , array(
-		'default'   => '<div style="margin-bottom: 10px;">' . apply_filters( 'follet_secondary_color_tip', __( 'This is the alternative color for the theme. It is used for contrasts such as link hovers and a number of design elements.', 'follet_theme' ) ) . '</div>',
+	$wp_customize->add_setting( 'secondary_color_tip', array(
+		'default'           => _follet_secondary_color_tip(),
+		'sanitize_callback' => '_follet_secondary_color_tip',
 	) );
 
 	$wp_customize->add_control(
@@ -329,7 +338,8 @@ function follet_customize_colors( $wp_customize ) {
 	);
 
 	$wp_customize->add_setting( 'header_background_color_tip' , array(
-		'default'   => '<div style="margin-bottom: 5px;">' . apply_filters( 'follet_header_background_color_tip', __( 'This color will display as the header background when you have not set a header image. You can choose to ignore this setting if you want a transparent background.', 'follet_theme' ) ) . '</div>',
+		'default'   => _follet_header_background_color_tip(),
+		'sanitize_callback' => '_follet_header_background_color_tip',
 	) );
 
 	$wp_customize->add_control(
@@ -345,9 +355,10 @@ function follet_customize_colors( $wp_customize ) {
 	);
 
 
-	$wp_customize->add_setting( 'header_background_ignore' , array(
-		'default'   => follet_get_default( 'header_background_ignore' ),
-		'transport' => 'refresh',
+	$wp_customize->add_setting( 'header_background_ignore', array(
+		'default'           => follet_get_default( 'header_background_ignore' ),
+		'transport'         => 'refresh',
+		'sanitize_callback' => '_follet_sanitize_boolean',
 	) );
 
 	$wp_customize->add_control(

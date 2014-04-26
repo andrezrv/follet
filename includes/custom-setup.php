@@ -371,15 +371,18 @@ if ( ! function_exists( 'follet_primary_color' ) ) :
  * @since  1.0
  */
 function follet_primary_color() {
-	follet_override_stylesheet_colors(
+	$primary_color_style = follet_override_stylesheet_colors(
 		follet_get_current( 'primary_color' ),
 		get_template_directory() . '/css/primary-color.css',
 		follet_get_default( 'primary_color' ),
 		array( follet_get_default( 'primary_color' ) )
 	);
+	if ( $primary_color_style ) {
+		wp_add_inline_style( 'follet-primary-color', $primary_color_style );
+	}
 }
 endif;
-add_action( 'wp_head', 'follet_primary_color' );
+add_action( 'wp_enqueue_scripts', 'follet_primary_color' );
 
 if ( ! function_exists( 'follet_secondary_color' ) ) :
 /**
@@ -389,15 +392,18 @@ if ( ! function_exists( 'follet_secondary_color' ) ) :
  * @since  1.0
  */
 function follet_secondary_color() {
-	follet_override_stylesheet_colors(
+	$secondary_color_style = follet_override_stylesheet_colors(
 		follet_get_current( 'secondary_color' ),
 		get_template_directory() . '/css/secondary-color.css',
 		follet_get_default( 'secondary_color' ),
 		array( follet_get_default( 'secondary_color' ) )
 	);
+	if ( $secondary_color_style ) {
+		wp_add_inline_style( 'follet-secondary-color', $secondary_color_style );
+	}
 }
 endif;
-add_action( 'wp_head', 'follet_secondary_color' );
+add_action( 'wp_enqueue_scripts', 'follet_secondary_color' );
 
 if ( ! function_exists( 'follet_primary_sidebar_background_color' ) ) :
 /**
@@ -407,15 +413,18 @@ if ( ! function_exists( 'follet_primary_sidebar_background_color' ) ) :
  * @since  1.0
  */
 function follet_primary_sidebar_background_color() {
-	follet_override_stylesheet_colors(
+	$sidebar_background_color_style = follet_override_stylesheet_colors(
 		follet_get_current( 'primary_sidebar_background_color' ),
 		get_template_directory() . '/css/primary-sidebar-color.css',
 		follet_get_default( 'primary_sidebar_background_color' ),
 		array( follet_get_default( 'primary_sidebar_background_color' ), 'white' )
 	);
+	if ( $sidebar_background_color_style ) {
+		wp_add_inline_style( 'follet-primary-sidebar-color', $sidebar_background_color_style );
+	}
 }
 endif;
-add_action( 'wp_head', 'follet_primary_sidebar_background_color' );
+add_action( 'wp_enqueue_scripts', 'follet_primary_sidebar_background_color' );
 
 if ( ! function_exists( 'follet_bootstrap_carousel_control' ) ) :
 /**

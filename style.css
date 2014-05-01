@@ -886,3 +886,8 @@ embed[src*="v.wordpress.com"] {
     display: none;
   }
 }
+@media screen and (max-width: 782px) {
+  .dropdown-submenu .dropdown-menu {
+    padding: 15px 0 15px 15px;
+  }
+}

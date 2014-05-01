@@ -125,6 +125,13 @@ body {
 		color: $white;
 	}
 }
+@media screen and (max-width:782px) {
+	#top-navigation .dropdown-submenu {
+		& a:hover {
+			color: $dark;
+		}
+	}
+}
 
 .navbar-default #top-navigation-searchform-copy {
 	background-color: $white;

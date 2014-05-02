@@ -297,9 +297,6 @@ blockquote {
 	.widget {
 		.widget-title {
 			color: $text-secondary;
-			+ .separator {
-				margin: 0
-			}
 		}
 		ul {
 			li {

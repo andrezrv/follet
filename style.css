@@ -541,9 +541,9 @@ ol.comment-list ol.children {
   padding: 30px 30px;
 }
 
-#secondary .widget.widget_text .widget-title + .separator,
-#footer .widget.widget_text .widget-title + .separator {
-  margin-bottom: 10px;
+#secondary .widget .widget-title + .separator,
+#footer .widget .widget-title + .separator {
+  margin: 0 0 10px;
 }
 #secondary .widget.widget_archive select,
 #footer .widget.widget_archive select {
@@ -582,6 +582,7 @@ ol.comment-list ol.children {
 #secondary .widget ul,
 #footer .widget ul {
   list-style-type: none;
+  margin-top: -10px;
   padding: 0;
 }
 #secondary .widget ul li,
@@ -617,7 +618,7 @@ ol.comment-list ol.children {
    Footer only
    ========================================================================== */
 #footer .widget .widget-title + .separator {
-  margin: 0;
+  margin: 0 0 10px;
 }
 #footer .container {
   padding: 30px;

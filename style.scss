@@ -588,10 +588,8 @@ ol.comment-list {
 #secondary,
 #footer {
 	.widget {
-		&.widget_text {
-			.widget-title + .separator {
-				margin-bottom: 10px;
-			}
+		.widget-title + .separator {
+			margin: 0 0 10px;
 		}
 		&.widget_archive {
 			select {
@@ -633,6 +631,7 @@ ol.comment-list {
 		margin-bottom: 25px;
 		ul {
 			list-style-type: none;
+			margin-top: -10px;
 			padding: 0;
 			li {
 				margin: 0;
@@ -668,7 +667,7 @@ ol.comment-list {
 	.widget {
 		.widget-title {
 			+ .separator {
-				margin: 0
+				margin: 0 0 10px;
 			}
 		}
 	}

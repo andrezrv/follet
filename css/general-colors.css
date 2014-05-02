@@ -211,9 +211,6 @@ blockquote {
 #secondary .widget .widget-title {
   color: white;
 }
-#secondary .widget .widget-title + .separator {
-  margin: 0;
-}
 #secondary .widget ul li {
   border-bottom: 1px solid #dedede;
 }

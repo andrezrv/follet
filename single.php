@@ -18,7 +18,7 @@
 				<?php follet_breadcrumb( array( 'home_text' => '' ) ); ?>
 			<?php endif; ?>
 
-			<?php get_template_part( 'content', 'single' ); ?>
+			<?php get_template_part( 'content', ( $post_format = get_post_format() ) ? $post_format : 'single' ); ?>
 
 			<?php get_template_part( 'templates/post-navigation', 'single' ); ?>
 

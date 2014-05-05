@@ -12,11 +12,6 @@
 do_action( 'follet_before_functions' );
 
 /**
- * Define theme version.
- */
-define( 'FOLLET_THEME_VERSION', '1.0' );
-
-/**
  * Set $template_directory to avoid calling get_template_directory() all the time.
  */
 $template_directory = get_template_directory();

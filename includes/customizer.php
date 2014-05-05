@@ -13,6 +13,7 @@
  */
 do_action( 'follet_before_customizer' );
 
+if ( ! function_exists( 'follet_customize_register' ) ) :
 /**
  * Add postMessage support for site title and description for the Theme Customizer.
  *
@@ -25,8 +26,10 @@ function follet_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 }
+endif;
 add_action( 'customize_register', 'follet_customize_register', 10 );
 
+if ( ! function_exists( 'follet_customize_top_navigation' ) ) :
 /**
  * Customizations for Top Navigation.
  *
@@ -145,8 +148,10 @@ function follet_customize_top_navigation( $wp_customize ) {
 	);
 
 }
+endif;
 add_action( 'customize_register', 'follet_customize_top_navigation' );
 
+if ( ! function_exists( 'follet_customize_header_logo' ) ) :
 /**
  * Allow to upload a custom logo to replace the header text.
  *
@@ -222,8 +227,10 @@ function follet_customize_header_logo( $wp_customize ) {
 	}
 
 }
+endif;
 add_action( 'customize_register', 'follet_customize_header_logo' );
 
+if ( ! function_exists( 'follet_customize_title_tagline' ) ) :
 /**
  * Relocate header image section.
  *
@@ -234,8 +241,10 @@ add_action( 'customize_register', 'follet_customize_header_logo' );
 function follet_customize_title_tagline( $wp_customize ) {
 	$wp_customize->get_section( 'header_image' )->priority = $wp_customize->get_section( 'title_tagline' )->priority + 2;
 }
+endif;
 add_action( 'customize_register', 'follet_customize_title_tagline' );
 
+if ( ! function_exists( 'follet_customize_colors' ) ) :
 /**
  * Manage primary, secondary, sidebar background and header background colors.
  *
@@ -399,8 +408,10 @@ function follet_customize_colors( $wp_customize ) {
 	);
 
 }
+endif;
 add_action( 'customize_register', 'follet_customize_colors' );
 
+if ( ! function_exists( 'follet_customize_preview_js' ) ) :
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  *
@@ -415,6 +426,7 @@ function follet_customize_preview_js() {
 		true
 	);
 }
+endif;
 add_action( 'customize_preview_init', 'follet_customize_preview_js' );
 
 /**

@@ -169,6 +169,7 @@ function follet_register_sidebars() {
 endif;
 add_action( 'widgets_init', 'follet_register_sidebars' );
 
+if ( ! function_exists( 'follet_add_editor_styles' ) ) :
 /**
  * Add styles for post editor.
  *
@@ -187,6 +188,7 @@ function follet_add_editor_styles() {
 	add_editor_style( $template_directory_uri . '/css/secondary-color.css' );
 
 }
+endif;
 add_action( 'init', 'follet_add_editor_styles' );
 
 if ( ! function_exists( 'follet_enqueue_scripts' ) ) :
@@ -444,6 +446,7 @@ function follet_bootstrap_carousel_control( $control ) {
 endif;
 add_filter( 'agnosia_bootstrap_carousel_control', 'follet_bootstrap_carousel_control' );
 
+if ( ! function_exists( 'follet_content_width' ) ) :
 /**
  * Set content_width by sidebar availability.
  *
@@ -463,6 +466,7 @@ function follet_content_width() {
 	}
 
 }
+endif;
 add_action( 'after_setup_theme', 'follet_content_width' );
 
 /**

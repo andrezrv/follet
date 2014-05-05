@@ -60,6 +60,3 @@ do_action( 'follet_setup' );
  * Add a hook for custom actions after loading this file.
  */
 do_action( 'follet_after_functions' );
-
-//add_filter( 'follet_option_current_sidebar_right_show', '__return_false' );
-//add_action( 'init', function() { var_dump(follet()); die(); } );

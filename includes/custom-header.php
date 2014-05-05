@@ -14,6 +14,7 @@
 do_action( 'follet_before_custom_header' );
 
 if ( ! function_exists( 'follet_custom_header_setup' ) ) :
+add_action( 'after_setup_theme', 'follet_custom_header_setup' );
 /**
  * Setup the WordPress core custom header feature.
  *
@@ -44,7 +45,6 @@ function follet_custom_header_setup() {
 	) );
 }
 endif;
-add_action( 'after_setup_theme', 'follet_custom_header_setup' );
 
 if ( ! function_exists( 'follet_header_style' ) ) :
 /**

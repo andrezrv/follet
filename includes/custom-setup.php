@@ -12,6 +12,7 @@
 do_action( 'follet_before_actions' );
 
 if ( ! function_exists( 'follet_register_options' ) ) :
+add_action( 'follet_setup', 'follet_register_options' );
 /**
  * Register options for this theme through Follet Core.
  *
@@ -82,9 +83,9 @@ function follet_register_options() {
 
 }
 endif;
-add_action( 'follet_setup', 'follet_register_options' );
 
 if ( ! function_exists( 'follet_register_menus' ) ) :
+add_action( 'init', 'follet_register_menus' );
 /**
  * Register navigation menus.
  *
@@ -102,9 +103,9 @@ function follet_register_menus() {
 	);
 }
 endif;
-add_action( 'init', 'follet_register_menus' );
 
 if ( ! function_exists( 'follet_custom_main_style_dependencies' ) ) :
+add_filter( 'follet_main_style_dependencies', 'follet_custom_main_style_dependencies' );
 /**
  * Add Dashicons as a dependency for the main style.
  *
@@ -115,10 +116,10 @@ function follet_custom_main_style_dependencies( $dependencies ) {
 	$dependencies[] = 'dashicons';
 	return $dependencies;
 }
-add_filter( 'follet_main_style_dependencies', 'follet_custom_main_style_dependencies' );
 endif;
 
 if ( ! function_exists( 'follet_register_sidebars' ) ) :
+add_action( 'widgets_init', 'follet_register_sidebars' );
 /**
  * Register sibebars for this theme.
  *
@@ -167,9 +168,9 @@ function follet_register_sidebars() {
 
 }
 endif;
-add_action( 'widgets_init', 'follet_register_sidebars' );
 
 if ( ! function_exists( 'follet_add_editor_styles' ) ) :
+add_action( 'init', 'follet_add_editor_styles' );
 /**
  * Add styles for post editor.
  *
@@ -189,9 +190,9 @@ function follet_add_editor_styles() {
 
 }
 endif;
-add_action( 'init', 'follet_add_editor_styles' );
 
 if ( ! function_exists( 'follet_enqueue_scripts' ) ) :
+add_action( 'wp_enqueue_scripts', 'follet_enqueue_scripts' );
 /**
  * Enqueue additional scripts for this theme.
  *
@@ -310,9 +311,9 @@ function follet_enqueue_scripts() {
 
 }
 endif;
-add_action( 'wp_enqueue_scripts', 'follet_enqueue_scripts' );
 
 if ( ! function_exists( 'follet_post_author_section_microdata' ) ) :
+add_filter( 'follet_post_author_section', 'follet_post_author_section_microdata' );
 /**
  * Apply microdata to post author section.
  *
@@ -326,9 +327,9 @@ function follet_post_author_section_microdata( $output ) {
 	return $output;
 }
 endif;
-add_filter( 'follet_post_author_section', 'follet_post_author_section_microdata' );
 
 if ( ! function_exists( 'follet_post_comments_section_microdata' ) ) :
+add_filter( 'follet_post_comments_section', 'follet_post_comments_section_microdata' );
 /**
  * Apply microdata to post comments section.
  *
@@ -342,9 +343,9 @@ function follet_post_comments_section_microdata( $output ) {
 	return $output;
 }
 endif;
-add_filter( 'follet_post_comments_section', 'follet_post_comments_section_microdata' );
 
 if ( ! function_exists( 'follet_comments_microdata' ) ) :
+add_filter( 'follet_list_comments', 'follet_comments_microdata' );
 /**
  * Apply microdata to comments section.
  *
@@ -363,9 +364,9 @@ function follet_comments_microdata( $output ) {
 	return $output;
 }
 endif;
-add_filter( 'follet_list_comments', 'follet_comments_microdata' );
 
 if ( ! function_exists( 'follet_primary_color' ) ) :
+add_action( 'wp_enqueue_scripts', 'follet_primary_color' );
 /**
  * Add styles when a primary color is set.
  *
@@ -384,9 +385,9 @@ function follet_primary_color() {
 	}
 }
 endif;
-add_action( 'wp_enqueue_scripts', 'follet_primary_color' );
 
 if ( ! function_exists( 'follet_secondary_color' ) ) :
+add_action( 'wp_enqueue_scripts', 'follet_secondary_color' );
 /**
  * Add styles when a secondary color is set.
  *
@@ -405,9 +406,9 @@ function follet_secondary_color() {
 	}
 }
 endif;
-add_action( 'wp_enqueue_scripts', 'follet_secondary_color' );
 
 if ( ! function_exists( 'follet_primary_sidebar_background_color' ) ) :
+add_action( 'wp_enqueue_scripts', 'follet_primary_sidebar_background_color' );
 /**
  * Add styles when a background color for sidebar is set.
  *
@@ -426,9 +427,9 @@ function follet_primary_sidebar_background_color() {
 	}
 }
 endif;
-add_action( 'wp_enqueue_scripts', 'follet_primary_sidebar_background_color' );
 
 if ( ! function_exists( 'follet_bootstrap_carousel_control' ) ) :
+add_filter( 'agnosia_bootstrap_carousel_control', 'follet_bootstrap_carousel_control' );
 /**
  * Support for Agnosia Bootstrap Carousel
  *
@@ -444,9 +445,9 @@ function follet_bootstrap_carousel_control( $control ) {
 	return $control;
 }
 endif;
-add_filter( 'agnosia_bootstrap_carousel_control', 'follet_bootstrap_carousel_control' );
 
 if ( ! function_exists( 'follet_content_width' ) ) :
+add_action( 'after_setup_theme', 'follet_content_width' );
 /**
  * Set content_width by sidebar availability.
  *
@@ -467,7 +468,6 @@ function follet_content_width() {
 
 }
 endif;
-add_action( 'after_setup_theme', 'follet_content_width' );
 
 /**
  * Add a hook for custom actions before loading the next file.

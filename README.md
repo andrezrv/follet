@@ -9,7 +9,7 @@ Named after [Ken Follet](http://en.wikipedia.org/wiki/Ken_Follett), author of [T
 
 * Built on [Bootstrap 3](http://getbootstrap.com/) for a great responsive experience with any device your visitors use.
 * Really SEO friendly with the implementation of current HTML5 standards and [schema.org](http://schema.org) microdata.
-* Custom header and backgroung images and colors.
+* Custom header and background images and colors.
 * Top navigation including custom menu, alternative color scheme, fix-to-top feature and optional searchform.
 * Bottom navigation including custom menu with social media support and customizable credits.
 * Intelligent primary sidebar that won't show if no widgets are attached to it.
@@ -29,7 +29,7 @@ Named after [Ken Follet](http://en.wikipedia.org/wiki/Ken_Follett), author of [T
 * Support for featured images.
 * Support for sticky posts.
 * Support for all [Jetpack](http://jetpack.me/) modules, specially [Infinite Scroll](http://jetpack.me/support/infinite-scroll/), [Contact Form](http://jetpack.me/support/contact-form/), [Extra Sidebar Widgets](http://jetpack.me/support/extra-sidebar-widgets/), [Sharing](http://jetpack.me/support/sharing/), [Carousel](http://jetpack.me/support/carousel/) and [Tiled Galleries](http://jetpack.me/support/tiled-galleries/).
-* Languages included: English (en_EN), Spanish (es_ES).
+* Languages included: English (en_US), Spanish (es_ES).
 
 ## Even More Features for Developers
 

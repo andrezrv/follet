@@ -108,6 +108,15 @@ textarea {
 	border-radius: 0;
 }
 
+blockquote {
+	border-width: 3px;
+	margin-left: 15px;
+	cite {
+		display: block;
+		text-align: right;
+	}
+}
+
 .radio,
 .checkbox,
 input[type="radio"],
@@ -405,6 +414,13 @@ img {
 	table {
 		margin-bottom: 20px;
 	}
+	&.format-quote {
+		blockquote:first-child {
+			border-width: 0;
+			margin-left: 0;
+			padding: 0;
+		}
+	}
 }
 
 .entry-header,
@@ -596,6 +612,10 @@ ol.comment-list {
 	}
 	.form-control {
 		max-width: none;
+	}
+	.comment-form-element {
+		margin-bottom: 10px;
+		overflow: hidden;
 	}
 }
 

@@ -17,6 +17,10 @@ code {
   background-color: transparent;
 }
 
+blockquote:before {
+  color: #dedede;
+}
+
 .breadcrumb {
   background: none;
   border-bottom: 1px solid #dedede;
@@ -130,6 +134,7 @@ code {
 
 blockquote {
   background-color: #ededed;
+  background-color: transparent;
 }
 
 .entry-thumbnail {

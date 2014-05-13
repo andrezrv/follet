@@ -36,6 +36,12 @@ code {
 	background-color: transparent;
 }
 
+blockquote {
+	&:before {
+		color: $light-medium-grey;
+	}
+}
+
 .breadcrumb {
 	background: none;
 	border-bottom: 1px solid $light-medium-grey;
@@ -186,6 +192,7 @@ code {
 
 blockquote {
 	background-color: $light-grey;
+	background-color: transparent;
 }
 
 .entry-thumbnail {

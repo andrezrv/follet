@@ -99,6 +99,15 @@ textarea {
   border-radius: 0;
 }
 
+blockquote {
+  border-width: 3px;
+  margin-left: 15px;
+}
+blockquote cite {
+  display: block;
+  text-align: right;
+}
+
 .radio,
 .checkbox,
 input[type="radio"],
@@ -378,6 +387,12 @@ body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
 #tinymce.wp-editor table {
   margin-bottom: 20px;
 }
+#main article.format-quote blockquote:first-child,
+#tinymce.wp-editor.format-quote blockquote:first-child {
+  border-width: 0;
+  margin-left: 0;
+  padding: 0;
+}
 
 .entry-header > .avatar,
 .author-info > .avatar {
@@ -550,6 +565,10 @@ ol.comment-list ol.children {
 }
 #commentform .form-control {
   max-width: none;
+}
+#commentform .comment-form-element {
+  margin-bottom: 10px;
+  overflow: hidden;
 }
 
 /* =============================================================================

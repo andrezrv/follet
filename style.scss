@@ -108,6 +108,14 @@ textarea {
 	border-radius: 0;
 }
 
+.radio,
+.checkbox,
+input[type="radio"],
+input[type="checkbox"] {
+	float: left;
+	margin-right: 5px;
+}
+
 .form-control,
 .input-group-addon {
 	border-radius: 0;

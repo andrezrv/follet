@@ -121,6 +121,18 @@ input[type="checkbox"] {
 	border-radius: 0;
 }
 
+input, select {
+	&.form-control {
+		max-width: 350px;
+	}
+}
+
+textarea {
+	&.form-control {
+		max-width: 525px;
+	}
+}
+
 .screen-reader-text {
 	display: none;
 }
@@ -581,6 +593,9 @@ ol.comment-list {
 #commentform {
 	.input-group {
 		margin-bottom: 10px;
+	}
+	.form-control {
+		max-width: none;
 	}
 }
 

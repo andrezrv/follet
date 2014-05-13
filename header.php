@@ -22,7 +22,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> <?php follet_microdata( 'body' ); ?>>
+<body id="wrapper" <?php body_class(); ?> <?php follet_microdata( 'body' ); ?>>
 
 	<div id="page" class="hfeed site">
 

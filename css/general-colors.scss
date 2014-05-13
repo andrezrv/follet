@@ -32,6 +32,10 @@ body {
 	color: $text-general;
 }
 
+code {
+	background-color: transparent;
+}
+
 .breadcrumb {
 	background: none;
 	border-bottom: 1px solid $light-medium-grey;

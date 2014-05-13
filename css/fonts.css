@@ -159,6 +159,9 @@ body {
 #comments #reply-title {
   font-size: 36px;
 }
+#comments .form-allowed-tags {
+  line-height: 24px;
+}
 
 .comment-author,
 .comment-metadata {

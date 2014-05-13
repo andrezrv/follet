@@ -13,6 +13,10 @@ body {
   color: black;
 }
 
+code {
+  background-color: transparent;
+}
+
 .breadcrumb {
   background: none;
   border-bottom: 1px solid #dedede;

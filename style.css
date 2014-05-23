@@ -277,25 +277,20 @@ img {
   margin-bottom: 5px;
 }
 
+/* =============================================================================
+   Top navigation
+   ========================================================================== */
 .landing-page-header {
   padding: 30px;
   color: #fff;
 }
 .landing-page-header .page-title {
-  font-family: 'Neuton',serif;
-  font-size: 62px;
-  font-weight: bold;
-  line-height: 62px;
   margin: 0;
 }
 .landing-page-header .page-excerpt {
-  font-size: 18px;
   padding: 20px 0;
 }
 
-/* =============================================================================
-   Top navigation
-   ========================================================================== */
 #top-navigation-wrapper {
   margin: 0;
   padding: 10px 0;

@@ -932,6 +932,7 @@ embed[src*="v.wordpress.com"] {
 
   body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
     margin-top: 46px;
+    z-index: 1;
   }
 }
 @media screen and (max-width: 768px) {

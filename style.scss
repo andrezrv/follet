@@ -1021,6 +1021,7 @@ embed[src*="v.wordpress.com"] {
 		&.navbar-fixed-top {
 			body.admin-bar & {
 				margin-top: 46px;
+				z-index: 1;
 			}
 		}
 	}

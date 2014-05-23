@@ -1032,6 +1032,12 @@ embed[src*="v.wordpress.com"] {
 	#secondary {
 		padding: 30px 15px;
 	}
+	#primary {
+		min-height: 0 !important;
+	}
+	#secondary {
+		padding-top: 0;
+	}
 	#credits, #social-menu {
 		padding: 0;
 		text-align: center;

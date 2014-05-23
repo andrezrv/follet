@@ -21,7 +21,7 @@ a {
    ========================================================================== */
 
 .btn {
-	&.btn-secondary {
+	&.btn-secondary:not(.navbar-toggle) {
 		background-color: $secondary;
 	}
 }

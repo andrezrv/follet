@@ -169,6 +169,9 @@ blockquote {
 	.site-title {
 		a {
 			color: $text-secondary;
+			&:hover {
+				color: $text-primary-contrast;
+			}
 		}
 	}
 	.site-description {
@@ -245,6 +248,9 @@ blockquote {
 .entry-content {
 	border-bottom: 1px solid $light-medium-grey;
 	border-top: 1px solid $light-medium-grey;
+	.landing-page & {
+		border-top: none;
+	}
 }
 
 .entry-meta {

@@ -117,6 +117,9 @@ blockquote:before {
 .site-branding .site-title a {
   color: white;
 }
+.site-branding .site-title a:hover {
+  color: #777777;
+}
 .site-branding .site-description {
   color: white;
 }
@@ -178,6 +181,9 @@ blockquote {
 .entry-content {
   border-bottom: 1px solid #dedede;
   border-top: 1px solid #dedede;
+}
+.landing-page .entry-content {
+  border-top: none;
 }
 
 .entry-meta section {

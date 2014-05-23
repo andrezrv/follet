@@ -469,6 +469,20 @@ function follet_content_width() {
 }
 endif;
 
+if ( ! function_exists( 'follet_add_page_excerpt' ) ) :
+add_action( 'init', 'follet_add_page_excerpt' );
+/**
+ * Enable post excerpts for pages. This is needed to correctly create pages
+ * based on the Landing Page template.
+ *
+ * @return void
+ * @since  1.1
+ */
+function follet_add_page_excerpt() {
+	add_post_type_support( 'page', 'excerpt' );
+}
+endif;
+
 /**
  * Add a hook for custom actions before loading the next file.
  */

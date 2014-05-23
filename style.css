@@ -277,6 +277,22 @@ img {
   margin-bottom: 5px;
 }
 
+.landing-page-header {
+  padding: 30px;
+  color: #fff;
+}
+.landing-page-header .page-title {
+  font-family: 'Neuton',serif;
+  font-size: 62px;
+  font-weight: bold;
+  line-height: 62px;
+  margin: 0;
+}
+.landing-page-header .page-excerpt {
+  font-size: 18px;
+  padding: 20px 0;
+}
+
 /* =============================================================================
    Top navigation
    ========================================================================== */
@@ -290,6 +306,10 @@ img {
 }
 body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
   margin-top: 32px;
+}
+
+#top-navigation {
+  position: relative;
 }
 
 #top-navigation-menu-navbar {
@@ -334,6 +354,24 @@ body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
 }
 .site-branding h2 {
   margin: 10px 0;
+}
+.landing-page .site-branding {
+  float: left;
+  padding: 0;
+  position: relative;
+  width: auto;
+  z-index: 10;
+}
+.landing-page .site-branding .site-title {
+  float: left;
+  font-size: 32px;
+  line-height: normal;
+  margin: 0;
+  overflow: hidden;
+  padding: 0 15px;
+}
+.landing-page .site-branding .site-title a {
+  color: #000;
 }
 
 /* =============================================================================
@@ -384,6 +422,12 @@ body.admin-bar #top-navigation-wrapper.navbar-fixed-top {
   overflow: hidden;
   padding-bottom: 25px;
   padding-top: 25px;
+}
+.landing-page #main article .entry-content, .landing-page
+#main article .entry-summary, .landing-page
+#tinymce.wp-editor .entry-content, .landing-page
+#tinymce.wp-editor .entry-summary {
+  padding-top: 0;
 }
 #main article table,
 #tinymce.wp-editor table {
@@ -899,6 +943,15 @@ embed[src*="v.wordpress.com"] {
   #credits, #social-menu {
     padding: 0;
     text-align: center;
+  }
+
+  .landing-page .site-branding .site-title {
+    padding: 0;
+  }
+
+  #top-navigation-searchform .search-field {
+    max-width: none;
+    width: 100%;
   }
 }
 @media screen and (max-width: 380px) {

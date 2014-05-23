@@ -13,7 +13,7 @@ a:hover {
 
 /* Buttons
    ========================================================================== */
-.btn.btn-secondary {
+.btn.btn-secondary:not(.navbar-toggle) {
   background-color: #d9534f;
 }
 

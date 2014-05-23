@@ -2,9 +2,8 @@
 /**
  * Template Name: Landing Page
  *
- * This is a template meant for landing pages, featuring a large hero unit, a
- * slightly modified top navigation and the chosen featured image as the header
- * background.
+ * This is a template meant for landing pages, featuring a large hero unit with
+ * your header image as background and a slightly modified top navigation.
  *
  * @package Follet_Theme
  * @since   1.1

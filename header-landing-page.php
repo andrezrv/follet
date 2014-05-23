@@ -8,7 +8,6 @@
  * @package Follet_Theme
  * @since   1.1
  */
-//echo get_theme_mod( 'header_textcolor', '000' ); die();
 ?>
 <!DOCTYPE html>
 

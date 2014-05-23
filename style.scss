@@ -1024,6 +1024,14 @@ embed[src*="v.wordpress.com"] {
 			}
 		}
 	}
+}
+
+@media screen and (max-width:768px) {
+	.landing-page-header,
+	#primary,
+	#secondary {
+		padding: 30px 15px;
+	}
 	#credits, #social-menu {
 		padding: 0;
 		text-align: center;
@@ -1038,6 +1046,9 @@ embed[src*="v.wordpress.com"] {
 			max-width: none;
 			width: 100%;
 		}
+	}
+	.dropdown-submenu .dropdown-menu {
+		padding: 15px 0 15px 15px;
 	}
 }
 
@@ -1067,11 +1078,5 @@ embed[src*="v.wordpress.com"] {
 		.wp-caption-text {
 			display: none;
 		}
-	}
-}
-
-@media screen and (max-width:782px) {
-	.dropdown-submenu .dropdown-menu {
-		padding: 15px 0 15px 15px;
 	}
 }

@@ -163,7 +163,7 @@ blockquote {
 	.site-title {
 		a {
 			color: $text-secondary;
-			&:hover {
+			.landing-page &:hover {
 				color: $text-primary-contrast;
 			}
 		}

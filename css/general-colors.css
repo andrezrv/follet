@@ -113,7 +113,7 @@ blockquote:before {
 .site-branding .site-title a {
   color: white;
 }
-.site-branding .site-title a:hover {
+.landing-page .site-branding .site-title a:hover {
   color: #777777;
 }
 .site-branding .site-description {

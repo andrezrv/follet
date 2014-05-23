@@ -79,10 +79,6 @@ blockquote:before {
   border: none;
 }
 
-.navbar-fixed-top #top-navigation-searchform-copy {
-  box-shadow: 0px 10px 10px 0px #dedede;
-}
-
 #top-navigation .dropdown-submenu a:hover {
   color: white;
 }

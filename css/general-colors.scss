@@ -118,12 +118,6 @@ blockquote {
 	border: none;
 }
 
-#top-navigation-searchform-copy {
-	.navbar-fixed-top & {
-		box-shadow: 0px 10px 10px 0px $light-medium-grey;
-	}
-}
-
 #top-navigation .dropdown-submenu {
 	& a:hover {
 		color: $white;

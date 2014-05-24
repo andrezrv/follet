@@ -14,7 +14,31 @@ do_action( 'follet_before_actions' );
 if ( ! function_exists( 'follet_register_options' ) ) :
 add_action( 'follet_setup', 'follet_register_options' );
 /**
- * Register options for this theme through Follet Core.
+ * Register default options for this theme through Follet Core.
+ *
+ * You can override these settings by hooking into `follet_options_register` like this:
+ *
+<?php
+	add_action( 'follet_options_register', 'custom_register_options' );
+	function custom_register_options() {
+		$options = array(
+			'top_navigation_style'             => 'navbar-inverse',
+			'primary_color'                    => '#D9534F',
+			'secondary_color'                  => '#DD3333',
+			'header_background_color'          => '#D9534F',
+			'primary_sidebar_background_color' => '#CCCCCC',
+		);
+		foreach ( $options as $name => $default ) {
+			if ( ! follet_option_exists( $name ) ) {
+				follet_register_option(
+					$name,
+					$default,
+					get_theme_mod( $name, $default )
+				);
+			}
+		}
+	}
+
  *
  * @return void
  * @since  1.0
@@ -24,37 +48,37 @@ function follet_register_options() {
 	do_action( 'follet_options_register' );
 
 	$options = array(
-		'top_navigation_show'              => true,
-		'top_navigation_fix_top'           => false,
-		'top_navigation_searchform_show'   => false,
-		'top_navigation_style'             => 'navbar-default',
-		'social_navigation_show'           => true,
-		'header_logo_customize'            => false,
-		'header_logo_show'                 => false,
-		'header_logo_img'                  => '',
-		'header_show_title'                => true,
-		'header_show_tagline'              => true,
-		'primary_color'                    => '#428BCA',
-		'secondary_color'                  => '#D9534F',
-		'header_background_color'          => '#428BCA',
-		'header_background_ignore'         => false,
-		'primary_sidebar_background_color' => '#FFFFFF',
-		'show_footer_in_summary'           => true,
-		'footer_show'                      => true,
-		'back_to_top_show'                 => true,
-		'footer_credits_show'              => true,
-		'sidebar_primary_show'             => true,
-		'sidebar_footer_1_show'            => true,
-		'sidebar_footer_2_show'            => true,
-		'sidebar_footer_3_show'            => true,
-		'load_main_style'                  => true,
-		'skip_link_focus'                  => true,
-		'post_avatar_show'                 => false,
-		'post_author_info_show'            => false,
-		'breadcrumbs_show'                 => true,
-		'contact_methods_show'             => false,
-		'responsive_videos'                => true,
-		'contact_methods'                  => array(
+		'top_navigation_show'              => true, // Show top navigation.
+		'top_navigation_fix_top'           => false, // Fix top navigation container to the top of the page.
+		'top_navigation_searchform_show'   => false, // Show search form in top navigation.
+		'top_navigation_style'             => 'navbar-default', // Default style for top navigation. Allowed: "navbar-default" and "navbar-inverse".
+		'social_navigation_show'           => true, // Show social navigation at the bottom of the page.
+		'header_logo_customize'            => false, // Show the customizer option for header logo.
+		'header_logo_show'                 => false, // Show the header logo.
+		'header_logo_img'                  => '', // Default image for header logo.
+		'header_show_title'                => true, // Show site title in header.
+		'header_show_tagline'              => true, // Show site tagline in header
+		'primary_color'                    => '#428BCA', // Default primary color. This should be the same color defined in ./css/primary-color.scss.
+		'secondary_color'                  => '#D9534F', // Default secondary color. This should be the same color defined in ./css/secondary-color.scss.
+		'header_background_color'          => '#428BCA', // Default color for header background when no image is set.
+		'header_background_ignore'         => false, // Ignore header background color when no header image is set.
+		'primary_sidebar_background_color' => '#FFFFFF', // Default color for primary sidebar.
+		'show_footer_in_summary'           => true, // Show post footer in post summaries.
+		'footer_show'                      => true, // Show footer.
+		'back_to_top_show'                 => true, // Show back to top button before page footer.
+		'footer_credits_show'              => true, // Show theme credits.
+		'sidebar_primary_show'             => true, // Show primary sidebar.
+		'sidebar_footer_1_show'            => true, // Show first widget area in footer.
+		'sidebar_footer_2_show'            => true, // Show second widget area in footer.
+		'sidebar_footer_3_show'            => true, // Show third widget area in footer.
+		'load_main_style'                  => true, // Load style.css.
+		'skip_link_focus'                  => true, // Load js/min/skip-link-focus.min.js
+		'post_avatar_show'                 => false, // Show avatar of the post author.
+		'post_author_info_show'            => false, // Show author info right after post content.
+		'breadcrumbs_show'                 => true, // Show breadcrumbs.
+		'contact_methods_show'             => false, // Show additional contact methods.
+		'responsive_videos'                => true, // Make videos responsive.
+		'contact_methods'                  => array( // Additional contact methods.
 			'feed'       => 'RSS',
 			'wordpress'  => 'WordPress',
 			'twitter'    => 'Twitter',

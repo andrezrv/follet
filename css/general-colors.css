@@ -177,6 +177,9 @@ blockquote {
   border-bottom: 1px solid #dedede;
   border-top: 1px solid #dedede;
 }
+.woocommerce-page .entry-summary {
+  border: none;
+}
 
 .entry-content {
   border-bottom: 1px solid #dedede;
@@ -184,6 +187,9 @@ blockquote {
 }
 .landing-page .entry-content {
   border-top: none;
+}
+.woocommerce-page .entry-content {
+  border: none;
 }
 
 .entry-meta section {

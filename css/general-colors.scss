@@ -241,6 +241,9 @@ blockquote {
 .entry-summary {
 	border-bottom: 1px solid $light-medium-grey;
 	border-top: 1px solid $light-medium-grey;
+	.woocommerce-page & {
+		border: none;
+	}
 }
 
 .entry-content {
@@ -248,6 +251,9 @@ blockquote {
 	border-top: 1px solid $light-medium-grey;
 	.landing-page & {
 		border-top: none;
+	}
+	.woocommerce-page & {
+		border: none;
 	}
 }
 

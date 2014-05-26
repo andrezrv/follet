@@ -508,6 +508,13 @@ function follet_add_page_excerpt() {
 endif;
 
 /**
+ * Declare support for WooCommerce.
+ *
+ * @since 1.1
+ */
+add_theme_support( 'woocommerce' );
+
+/**
  * Add a hook for custom actions before loading the next file.
  */
 do_action( 'follet_after_actions' );

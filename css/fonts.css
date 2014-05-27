@@ -215,3 +215,10 @@ blockquote cite {
   font-size: 13px;
   line-height: 24px;
 }
+
+/* =============================================================================
+   Support for Sharing (via Jetpack)
+   ========================================================================== */
+.entry-content div.sharedaddy h3.sd-title, .entry-summary div.sharedaddy h3.sd-title {
+  font-family: 'Open Sans', sans-serif;
+}

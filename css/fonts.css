@@ -215,10 +215,3 @@ blockquote cite {
   font-size: 13px;
   line-height: 24px;
 }
-
-/* =============================================================================
-   Support for Related Posts (via Jetpack)
-   ========================================================================== */
-div.jp-relatedposts .jp-relatedposts-headline {
-  font-size: 22px;
-}

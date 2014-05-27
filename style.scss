@@ -962,6 +962,17 @@ embed[src*="v.wordpress.com"] {
 }
 
 /* =============================================================================
+   Support for Sharing (via Jetpack)
+   ========================================================================== */
+.entry-content, .entry-summary {
+	div.sharedaddy {
+		.sd-block, &.sd-block {
+			height: initial;
+		}
+	}
+}
+
+/* =============================================================================
    Support for Suscription (via Jetpack)
    ========================================================================== */
 .widget.jetpack_subscription_widget {

@@ -882,28 +882,6 @@ embed[src*="v.wordpress.com"] {
 }
 
 /* =============================================================================
-   Support for Sharing (via Jetpack)
-   ========================================================================== */
-.entry-content div.sharedaddy, .entry-summary div.sharedaddy {
-  margin: 25px 0 0;
-}
-.entry-content div.sharedaddy .sd-content, .entry-summary div.sharedaddy .sd-content {
-  float: left;
-}
-.entry-content div.sharedaddy + .sharedaddy, .entry-summary div.sharedaddy + .sharedaddy {
-  margin: 0;
-}
-.entry-content div.sharedaddy + .sharedaddy .sd-block, .entry-content div.sharedaddy + .sharedaddy.sd-block, .entry-summary div.sharedaddy + .sharedaddy .sd-block, .entry-summary div.sharedaddy + .sharedaddy.sd-block {
-  padding: 0;
-}
-.entry-content div.sharedaddy .sd-block, .entry-content div.sharedaddy.sd-block, .entry-summary div.sharedaddy .sd-block, .entry-summary div.sharedaddy.sd-block {
-  padding: 10px 0 0;
-}
-.entry-content div.sharedaddy .post-likes-widget, .entry-summary div.sharedaddy .post-likes-widget {
-  width: 84.30%;
-}
-
-/* =============================================================================
    Support for Suscription (via Jetpack)
    ========================================================================== */
 .widget.jetpack_subscription_widget form {

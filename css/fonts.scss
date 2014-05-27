@@ -264,7 +264,7 @@ blockquote {
    Support for Sharing (via Jetpack)
    ========================================================================== */
 .entry-content, .entry-summary {
-	div.sharedaddy h3.sd-title {
+	#main & div.sharedaddy h3.sd-title {
 		font-family: 'Open Sans', sans-serif;
 	}
 }

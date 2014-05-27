@@ -18,6 +18,7 @@ Named after [Ken Follet](http://en.wikipedia.org/wiki/Ken_Follett), author of [T
 * Customizable primary and secondary colors.
 * Easily readable content with implementation of [Open Sans](http://www.google.com/fonts/specimen/Open+Sans) (body text) and [Neuton](http://www.google.com/fonts/specimen/Neuton) (titles) via [Google Fonts](http://www.google.com/fonts).
 * Consistent icons rendered through [Dashicons](http://melchoyce.github.io/dashicons/) and [Genericons](http://genericons.com/).
+* Special template for landing pages.
 * Back-to-top button with a nice and smooth animation.
 * Full support for [editor styles](https://codex.wordpress.org/Editor_Style), so you'll never have to leave the editor to see what your posts will look like. What you see while writing will be the same you'll see after you publish your content.
 * Breadcrumbs, so your visitors can always find their way back home :)
@@ -29,6 +30,7 @@ Named after [Ken Follet](http://en.wikipedia.org/wiki/Ken_Follett), author of [T
 * Support for featured images.
 * Support for sticky posts.
 * Support for all [Jetpack](http://jetpack.me/) modules, specially [Infinite Scroll](http://jetpack.me/support/infinite-scroll/), [Contact Form](http://jetpack.me/support/contact-form/), [Extra Sidebar Widgets](http://jetpack.me/support/extra-sidebar-widgets/), [Sharing](http://jetpack.me/support/sharing/), [Carousel](http://jetpack.me/support/carousel/) and [Tiled Galleries](http://jetpack.me/support/tiled-galleries/).
+* Support for [WooCommerce](https://wordpress.org/plugins/woocommerce/) shopping cart.
 * Languages included: English (en_US), Spanish (es_ES).
 
 ## Even More Features for Developers
@@ -43,8 +45,6 @@ Named after [Ken Follet](http://en.wikipedia.org/wiki/Ken_Follett), author of [T
 
 ## Coming Soon
 
-* Specific templates for post formats.
-* Use featured image as header image.
 * bbPress compatibility.
 * BuddyPress compatibility.
 

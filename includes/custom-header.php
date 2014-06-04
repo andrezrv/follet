@@ -72,13 +72,13 @@ function follet_header_style() {
 			background-image: url('<?php header_image(); ?>');
 		}
 	<?php endif; ?>
-	<?php if ( get_theme_mod( 'header_background_ignore', false ) ) : ?>
+	<?php if ( follet_get_current( 'header_background_ignore' ) ) : ?>
 		#main-header {
 			background-color: transparent;
 		}
 	<?php else : ?>
 		#main-header {
-			background-color: <?php echo get_theme_mod( 'header_background_color', '#428BCA' ); ?>;
+			background-color: <?php echo follet_get_current( 'header_background_color' ); ?>;
 		}
 	<?php endif; ?>
 	<?php
@@ -119,7 +119,7 @@ if ( ! function_exists( 'follet_admin_header_style' ) ) :
 function follet_admin_header_style() {
 	?>
 
-	<?php if ( get_theme_mod( 'load_main_style', true ) ) : ?>
+	<?php if ( follet_get_current( 'load_main_style' ) ) : ?>
 		<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 	<?php endif; ?>
 	<link rel="stylesheet" href="<?php echo follet_template_directory_uri() . '/styles/fonts.css'; ?>">
@@ -149,8 +149,8 @@ function follet_admin_header_image() {
 
 	$style = sprintf( ' style="color:#%s;"', get_header_textcolor() );
 
-	$color = get_theme_mod( 'header_background_ignore', false )
-	       ? 'transparent' : get_theme_mod( 'header_background_color', '#428BCA' );
+	$color = follet_get_current( 'header_background_ignore' )
+	       ? 'transparent' : follet_get_current( 'header_background_color' );
 
 	$image = get_header_image()
 	       ? ' background-image: url(' . get_header_image() . ')' : '';
@@ -161,8 +161,8 @@ function follet_admin_header_image() {
 		<div class="site-branding <?php follet_container_class( 'site-branding' ); ?>">
 			<?php
 
-			if (    get_theme_mod( 'header_logo_show', false )
-				and $header_logo_img = get_theme_mod( 'header_logo_img', '' ) ) : ?>
+			if (    follet_get_current( 'header_logo_show' )
+				and $header_logo_img = follet_get_current( 'header_logo_img' ) ) : ?>
 
 				<h1 class="site-title">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
@@ -172,13 +172,13 @@ function follet_admin_header_image() {
 
 			<?php else : ?>
 
-				<?php if ( get_theme_mod( 'header_show_title', true ) ) : ?>
+				<?php if ( follet_get_current( 'header_show_title' ) ) : ?>
 					<h1 class="site-title">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" <?php echo $style; ?>><?php bloginfo( 'name' ); ?></a>
 					</h1>
 				<?php endif; ?>
 
-				<?php if ( get_theme_mod( 'header_show_tagline', true ) ) : ?>
+				<?php if ( follet_get_current( 'header_show_tagline' ) ) : ?>
 					<h2 class="site-description" <?php echo $style; ?>><?php bloginfo( 'description' ); ?></h2>
 				<?php endif; ?>
 

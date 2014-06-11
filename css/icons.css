@@ -185,7 +185,7 @@ body.rtl #main article.post header:before, body.rtl #tinymce.wp-editor.post head
   content: "\f345";
 }
 
-blockquote:before {
+html blockquote:before {
   content: "\f122";
   float: left;
   font-family: 'dashicons';

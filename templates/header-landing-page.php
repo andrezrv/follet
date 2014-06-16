@@ -17,9 +17,9 @@
 				</h1>
 			<?php endif; ?>
 
-			<?php if ( $excerpt = get_the_excerpt() ) : ?>
+			<?php if ( get_the_excerpt() ) : ?>
 				<div class="page-excerpt" <?php follet_microdata( 'entry-summary' ); ?>>
-					<?php echo $excerpt; ?>
+					<?php the_excerpt(); ?>
 				</div>
 			<?php endif; ?>
 

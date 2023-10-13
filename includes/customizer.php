@@ -40,7 +40,13 @@ add_action( 'customize_register', 'follet_customize_top_navigation' );
  */
 function follet_customize_top_navigation( $wp_customize ) {
 
-	$wp_customize->get_section( 'nav' )->priority = 30;
+	add_action( 'customize_register', function ( \WP_Customize_Manager $wp_customize ) {
+		$panel = $wp_customize->get_panel( 'nav_menus' );
+		if ( $panel ) {
+			$panel->priority = 1;
+		}
+	}, 12 );
+
 
 	$wp_customize->add_section( 'top_navigation' , array(
 		'title'    => __( 'Top Navigation', 'follet_theme' ),
